@@ -1,0 +1,110 @@
+@keyframes dissolve {
+  from {
+      opacity: 1;
+  } to {
+      opacity: 0;
+  }
+}
+
+@keyframes in-and-out {
+  from {
+      opacity: 0;
+  } 50% {
+      opacity: 1;
+  } to {
+      opacity: 0;
+  }
+}
+
+
+#night-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Clouds */
+
+.night-cloud-circle {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.night-cloud-dark {
+  background-color: black;
+  animation-name: in-and-out;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.night-cloud-light {
+  background-color: rgb(149, 128, 149);
+  animation-name: in-and-out;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.night-cloud-medium {
+  background-color: rgb(161, 84, 161);
+  animation-name: in-and-out;
+  animation-duration: 11s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.night-cloud-bg {
+  background-color: rgb(60, 45, 122);
+  animation-name: in-and-out;
+  animation-duration: 11.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.night-star {
+  position: absolute;
+}
+
+.twinkle-0 {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.twinkle-1 {
+  background-color: rgb(252, 243, 252);
+  border-radius: 0%;
+  transform: rotate(25deg);
+  box-shadow: none;
+}
+
+.twinkle-2 {
+  background-color: lightyellow;
+  border-radius: 0%;
+  transform: rotate(-25deg);
+  box-shadow: none;
+}
+
+.twinkle-3 {
+  background-color: rgb(233, 194, 30);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.twinkle-4 {
+  background-color: rgb(211, 50, 66);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px white;
+}
+
+.twinkle-5 {
+  background-color: rgb(70, 220, 255);
+  border-radius: 0%;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.twinkle-6 {
+  background-color: rgb(233, 194, 30);
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgb(233, 194, 30)
+}

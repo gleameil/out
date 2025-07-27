@@ -1,0 +1,13 @@
+{
+  "name": "in",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel -p 8080",
+    "build": "parcel build --public-url .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "typescript": "^5.8.3"
+  }
+}
