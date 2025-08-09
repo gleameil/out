@@ -1,4 +1,4 @@
-import { makeCoordinateStringVH, makeCoordinateStringVW, randomInRange, randomIntegerInRange, removeByClassName } from "../../../shared/helpers";
+import { makeCoordinateStringVH, makeCoordinateStringVW, randomInRange, randomIntegerInRange, removeByClassName } from "../../shared/helpers";
 import { cloudCircleClassName, cloudCircleClassNameColors, cloudCircleCountMaximum, cloudCircleCountMinimum, cloudCircleDiameterMaximum, cloudCircleDiameterMinimum, cloudCount, firstCoordinates, longestTimeOut, phraseCountMaximum, phraseCountMinimum, phraseLocationMaximum, phraseLocationMinimum, song, UTTERANCE_SERIES } from "./out.constants";
 
 // Make clouds

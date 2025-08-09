@@ -1,0 +1,95 @@
+#snowsight-container {
+  position: absolute;
+  left: -1vw;
+  top: -1vh;
+  width: 102vw;
+  height: 102vh;
+}
+.snowsight-dialogue-box {
+  position: absolute;
+  font-size: 3vmin;
+}
+
+.snowsight-option-box {
+  position: absolute;
+  background-color: black;
+  width: 102vw;
+  height: 14.4815vh;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.snowsight-option-button {
+  background-color: white;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 3vmin;
+  padding: 1vh;
+  margin: 1vh;
+  display: flex;
+  align-items: center;
+}
+
+.snowsight-option-button:hover {
+  background-color: gainsboro;
+}
+
+.snowsight-option-button:active {
+  background-color: lightyellow
+}
+
+#snowsight-bottom-dialogue-box {
+  width: 102vw;
+  height: 14.482vh;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+  background-color: white;
+}
+
+.snowsight-person {
+  position: absolute;
+  z-index: -1;
+}
+
+#snowsight-jenny {
+  left: 0;
+  bottom: 9.3vh;
+  max-height: 90vh
+}
+
+.snowsight-jennie {
+  display: none;
+  bottom: 14.482vh;
+  max-height: 60vh;
+}
+
+.snowsight-speaker-name {
+  font-family: 'Montserrat';
+  font-size: 3.5vmin;
+  height: 14.482vh;
+  /* border-right: black solid 2px; */
+  width: 15.625vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snowsight-dialogue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-size: 3vmin;
+  width: 100vw;
+}
+
+#snowsight-you {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 98vh;
+}

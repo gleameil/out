@@ -1,10 +1,14 @@
-import { JANUARY_COLORS } from "../../../shared/color";
-import { createAudio, createDivWithElements, removeByClassName, setBackground } from "../../../shared/helpers";
+import { JANUARY_COLORS } from "../../shared/color";
+import { createAudio, createDivWithElements, removeByClassName, setBackground } from "../../shared/helpers";
 import { longestTimeOut } from "./out.constants";
 import { move, setUpSpeech } from "./out.helpers";
 import './out.css';
-import { goToNextKindOfWeather } from "../../../shared/time/time";
-import { playIfAllowed } from "../../../shared/sound";
+import { getTime, goToNextKindOfWeather } from "../../shared/time/time";
+import { playIfAllowed } from "../../shared/sound";
+import { expectLetters } from "../../shared/helpers";
+import { setUpWindow } from "../january/january";
+
+const GETMEOUTTAHERE = 'desolation';
 
 export function escapeOut() {
   const counter = parseInt(sessionStorage.getItem('counter') ?? `${longestTimeOut}`, 10) || longestTimeOut ;
@@ -20,11 +24,17 @@ export function escapeOut() {
 }
 
 export function out() {
+  document.addEventListener('keydown', e => expectLetters(e, 0, GETMEOUTTAHERE, () => {
+    if (getTime().getMonth() === 0) {
+      goToNextKindOfWeather();
+      escapeOut();
+      setUpWindow();
+    }
+}), { once: true });
   const all = document.getElementsByTagName('html')[0];
-  document.getElementById('homeward')?.addEventListener('click', escapeOut, { once: true });
   setBackground(JANUARY_COLORS.gray);
-  console.log('The gray is infinite, and not much happens here, at least not in January... Some say it\'s the most fundamental reality. If you go back in, the weather will clear up before you know it, though. If you stay out, it\'s just kinda like this forever :(');
-  const audio = createAudio(new URL('../../../assets/audio/desolation.mp3', import.meta.url), [], 'window-out-audio');
+  console.log('The gray is infinite, and not much happens here, at least not in January... Some say it\'s the most fundamental reality. If you can find your way back In, the weather will clear up before you know it, but it\'s a challenge. If you stay out, it\'s just kinda like this forever :(');
+  const audio = createAudio(new URL('../../assets/audio/desolation.mp3', import.meta.url), [], 'window-out-audio');
   audio.currentTime = 160.0;
   audio.loop = true;
 

@@ -1,0 +1,88 @@
+#wordstorm-container {
+  width: 102vw;
+  height: 102vh;
+  display: flex; 
+  justify-content: center;
+  z-index: -2;
+}
+
+.normal-poem {
+  align-items: center;
+}
+
+.wordstorm {
+  position: absolute;
+}
+
+.ray {
+  position: absolute;
+  height: 1px;
+  z-index: -2;
+  top: 0;
+}
+
+.gold-ray {
+  right: 50vw;
+  width: 100vw;
+  height: 2px;
+  background-color: lightyellow;
+}
+.yellow-ray {
+  width: 175vw;
+  right: 12.5vw;
+  background-color: lightyellow;
+}
+
+.red-ray {
+  right: 25vw;
+  width: 150vw;
+  background-color: rgb(211, 50, 66);
+}
+
+.white-ray {
+  right: 25vw;
+  width: 150vw;
+  background-color: white;
+}
+
+.long-ray {
+  right: -50vw;
+  width: 300vw;
+  height: 2px;
+  background-color: lightyellow;
+}
+
+.poem-phrase {
+  font-family: 'EB Garamond';
+  font-size: 3.5vmin;
+  color: white;
+}
+
+.poem-stanza {
+  margin-top: 3.5vmin;
+  max-width: 60vw;
+}
+
+.poem-line {
+  line-height: 4.5vmin;
+}
+
+.acrostic-letter {
+  font-family: 'IM Fell English';
+  font-size: 5vmin;
+}
+
+.acrostic-letterless-line {
+  font-family: 'Montserrat';
+  font-size: 3.5vmin;
+}
+
+.acrostic-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.option-poem-phrase {
+  font-size: 4vmin; 
+}

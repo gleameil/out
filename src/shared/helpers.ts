@@ -82,15 +82,6 @@ export function createDivWithElements(elementsToAdd: HTMLElement[], classNames: 
   return div;
 }
 
-export function createHomewardButton(text: string, classNames: string[], goBack: () => void) {
-  const button = document.createElement('button');
-  button.innerText = text;
-  button.classList.add(...classNames)
-  button.id = 'homeward';
-  button.addEventListener('click', goBack);
-  return button;
-}
-
 export function createButtonWithImage(image: HTMLImageElement, classNames: string[], id: string): HTMLButtonElement {
   const button = document.createElement('button');
   button.classList.add('image-button', ...classNames);
@@ -141,4 +132,14 @@ export function sun(parent: HTMLDivElement, rayPrefix: string, time: string) {
     ray.style.transform = `rotate(-${i/2}deg)`;
     parent.append(ray);
   }
+}
+
+export function expectLetters(e: KeyboardEvent, index: number, letters: string, callback: () => void) {
+    if (index === letters.length) {
+        callback();
+        return;
+    }
+    if (e.key === letters[index]) {
+        document.addEventListener('keydown', e => expectLetters(e, index + 1, letters, callback), { once: true });
+    }
 }

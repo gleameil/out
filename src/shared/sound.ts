@@ -1,5 +1,6 @@
 import { AudioURLSrc } from "./constants";
 import { createButtonWithText } from "./helpers";
+import { stopSound } from "./instrument/instrument";
 
 interface WindowWithAudio {
   canPlayAudio?: boolean;
@@ -23,6 +24,7 @@ function togglePlayingSound() {
       }
     });
     document.getElementById('sound-control')!.innerText = '🔇'
+    stopSound();
   } else {
     windowWithAudio.canPlayAudio = true;
     const audioElements = document.getElementsByTagName('audio');
@@ -48,7 +50,7 @@ export function changeAudioSource(audio: HTMLAudioElement, newSource: URL) {
   audioWithURLSRC.src = newSource;
 }
 
-function canPlayAudio(): boolean {
+export function canPlayAudio(): boolean {
   let windowWithAudio = (window as unknown) as WindowWithAudio;
   return !!windowWithAudio.canPlayAudio;
 }

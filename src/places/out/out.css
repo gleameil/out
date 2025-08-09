@@ -17,7 +17,7 @@
 }
 
 .out-container {
-  cursor: url('../../../assets/images/out/cursorSmall.png'), auto;
+  cursor: url('../../assets/images/out/cursorSmall.png'), auto;
   position: absolute;
   bottom: 49vh;
   width: 98%;

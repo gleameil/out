@@ -6,9 +6,8 @@ export function setTime(time: Date) {
 }
 
 export function getTime(): Date {
-  const startDate = new Date(2024, 1);
-  const evernostianNowStringFromQuery = new URLSearchParams(window.location.search).get('time');
-  const evernostianNow = parseInt(evernostianNowStringFromQuery ?? '') || parseInt(localStorage.getItem('evernostianNow') ?? '') || startDate;
+  const startDate = new Date(2024, 0);
+  const evernostianNow = parseInt(localStorage.getItem('evernostianNow') ?? '');
   return evernostianNow ? new Date(evernostianNow) : startDate;
 }
 
@@ -16,18 +15,27 @@ export function advanceTimeBy(minutes: number) {
   setTime(new Date(getTime().valueOf() + 60000 * minutes))
 }
 
-export function startTime() {
-  setTime(getTime()); // if no time is stored in the browser, sets time to 12am Jan 1 2024 unless it's February, in which case it's Feb 1 2024
-  if (!(window as WindowWithClock).clock) {
-    (window as WindowWithClock).clock = setInterval(() => {
-      advanceTimeBy(1);
-     }, 60000);
+// It would be prettier to have these in getTime() but we do not want to go through these shenanigans every time we need the time
+function setTimeFromQueryAndRemoveParam(): boolean {
+  const query = new URLSearchParams(window.location.search);
+  const evernostianNowStringFromQuery = query.get('time');
+  const evernostianNowTimestamp = parseInt(evernostianNowStringFromQuery ?? '');
+  // should never be falsy, aka 0, aka the epoch, because this creation does not go that far back in time
+  if (evernostianNowTimestamp) {
+    setTime(new Date(evernostianNowTimestamp));
+    query.delete('time');
+    window.history.replaceState({}, '', window.location.href.replace(window.location.search, query.toString()));
+    return true
   }
+  return false
 }
 
-export function stopTime() {
-  clearInterval((window as WindowWithClock).clock);
-  delete((window as WindowWithClock).clock);
+// Time does not advance second-by-second Out but rather when you get through a given piece of content
+export function startTime() {
+  const queryDidContainTime = setTimeFromQueryAndRemoveParam();
+  if (!queryDidContainTime) {
+    setTime(getTime()); // sets time to whatever is in localStorage, or if nothing, Jan 1
+  }
 }
 
 export function timestampForTimeOnDate(timestamp: number, hours: number, minutes: number): number {
