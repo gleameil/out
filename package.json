@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel -p 8080",
-    "build": "parcel build",
+    "build": "parcel build --public-url .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
