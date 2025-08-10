@@ -4,6 +4,22 @@ on:
   push:
     branches:
       - main
+    workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write      # to deploy to Pages
+  id-token: write   # to verify the deployment originates from an appropriate source
+
+concurrency:
+  group: "pages"
+
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    # Deploy to the github-pages environment
+environment:
+  name: github-pages
+  url: ${{ steps.deployment.outputs.page_url }}
+
 
 jobs:
   build:
@@ -34,20 +50,11 @@ jobs:
   deploy:
     # Add a dependency to the build job
     needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
