@@ -1,8 +1,8 @@
 import { Font, FONTS } from "../../../shared/constants";
 import { JANUARY_COLORS, JanuaryColor } from '../../../shared/color';
-import { createAudio, makeLinearGradient, removeByClassName, setBackground, fadeBackground } from "../../../shared/helpers";
+import { removeByClassName, setBackground, fadeBackground } from "../../../shared/helpers";
 import { Time, TIMES } from "../../../shared/time/time.januaryConstants";
-import { dayOfTheMonth, timeOfDayFromDate, previousTime } from "../../../shared/time/time";
+import { dayOfTheMonth, timeOfDayFromDate } from "../../../shared/time/time";
 import { word } from "../january.helpers";
 import { Acrostic, ALL_BY_DISPENSATION, BrainstormTime, FragmentedPoem, PoemOptions, PoemWithOptions, SUN_RAY_START, SUN_RAY_INSTRUMENT, THERE_IS_A, WHERE_IS, WORDSTORM_SCHEDULE, SunRayPosition } from "./wordstorm.constants";
 import { END, FullPoem } from '../january.constants';

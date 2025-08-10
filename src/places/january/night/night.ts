@@ -53,7 +53,7 @@ export function night(enterWeather: () => void) {
   const container = document.createElement('div');
   container.classList.add('window')
   container.id = 'night-container';
-  container.append(createAudio(new URL('../../../assets/audio/Theme1.ogg', import.meta.url), [], 'night-audio'));
+  container.append(createAudio(new URL('../../../assets/audio/Theme1.ogg', import.meta.url), ['music'], 'night-audio'));
   container.addEventListener('click', proceed);
   document.getElementsByTagName('html')[0].append(container);
   proceed();

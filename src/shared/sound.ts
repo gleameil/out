@@ -28,12 +28,13 @@ function togglePlayingSound() {
   } else {
     windowWithAudio.canPlayAudio = true;
     const audioElements = document.getElementsByTagName('audio');
-    Array.from(audioElements).forEach(elem => elem.muted = false);
+    Array.from(audioElements).forEach(elem => {
+      elem.muted = false
+      if (elem.classList.contains('music') && elem.paused) {
+        elem.play();
+      }
+    });
     document.getElementById('sound-control')!.innerText = '🔈'
-    const homeSong = document.getElementById('home-song') as HTMLAudioElement;
-    if (homeSong && homeSong.paused) {
-      homeSong.play()
-    }
   }
 }
 
