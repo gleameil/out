@@ -1,5 +1,5 @@
 // using equal temperament
-export const C3 = 130.81;
+export const DEFAULT_ROOT = 110;
 export const SEMITONE_MULTIPLIER = 2 ** (1/12);
 export const WHOLE_TONE_MULTIPLIER = SEMITONE_MULTIPLIER ** 2;
 export const MINOR_THIRD_MULTIPLIER = SEMITONE_MULTIPLIER ** 3;
@@ -41,17 +41,17 @@ export const WORLDS: TonalWorlds = {
     },
     pentatonicMajor: {
         multipliers: [WHOLE_TONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER, MINOR_THIRD_MULTIPLIER, WHOLE_TONE_MULTIPLIER],
-        rootPitch: (C3/2) * MAJOR_THIRD_MULTIPLIER,
+        rootPitch: (DEFAULT_ROOT) * MAJOR_THIRD_MULTIPLIER,
     },
     pentatonicMinor: {
         multipliers: [MINOR_THIRD_MULTIPLIER, WHOLE_TONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER, MINOR_THIRD_MULTIPLIER],
-        rootPitch: (C3/2) * SIXTH_MULTIPLIER,
+        rootPitch: (DEFAULT_ROOT) * SIXTH_MULTIPLIER,
     },
     majorArpeggio: {
         multipliers: [MAJOR_THIRD_MULTIPLIER, MINOR_THIRD_MULTIPLIER],
         rootMultiplierAfterOctaves: WHOLE_TONE_MULTIPLIER,
         octaveCount: 5,
-        rootPitch: C3 / 4,
+        rootPitch: DEFAULT_ROOT / 3,
     },
     fourthsAndFifths: {
         multipliers: [FOURTH_MULTIPLIER],
@@ -60,7 +60,7 @@ export const WORLDS: TonalWorlds = {
     fourthsAndFifthsSunset: {
         multipliers: [FOURTH_MULTIPLIER],
         rootMultiplierAfterOctaves: WHOLE_TONE_MULTIPLIER,
-        rootPitch: C3 * SEMITONE_MULTIPLIER,
+        rootPitch: DEFAULT_ROOT * SEMITONE_MULTIPLIER,
     },
     major: {
         multipliers: [WHOLE_TONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER, SEMITONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER, WHOLE_TONE_MULTIPLIER]

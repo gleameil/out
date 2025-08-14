@@ -1,5 +1,5 @@
 import { canPlayAudio } from "../sound";
-import { C3, Instrument, TonalWorldParams, WindowWithAudioProperties } from "./instrument.constants";
+import { DEFAULT_ROOT, Instrument, TonalWorldParams, WindowWithAudioProperties } from "./instrument.constants";
 
 export class TonalWorld {
     readonly multipliers: number[];
@@ -12,7 +12,7 @@ export class TonalWorld {
 
 
     constructor(world: TonalWorldParams) {
-        const { multipliers, rootPitch = C3 / 2, octaveCount = 5, rootMultiplierAfterOctaves = 1 } = world;
+        const { multipliers, rootPitch = DEFAULT_ROOT / 2, octaveCount = 5, rootMultiplierAfterOctaves = 1 } = world;
         this.multipliers = multipliers;
         this.rootPitch = rootPitch;
         this.octaveCount = octaveCount;
