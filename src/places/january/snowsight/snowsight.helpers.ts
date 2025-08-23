@@ -125,21 +125,25 @@ function makeYou(time: Time, parent: HTMLDivElement) {
   ((you as unknown) as ImageURLSrc).src = SNOWSIGHT_SPEAKERS.you.images[0].path;
   you.classList.add('window', 'snowsight', 'snowsight-person');
   you.id = 'snowsight-you';
-  switch (time.foregroundColor) {
-    case JANUARY_COLORS.black:
-      turnRedBlack(you);
-      break;
-    case JANUARY_COLORS.red:
-      turnRedMutedRed(you);
-      break;
-    case JANUARY_COLORS.white:
-      turnRedWhite(you);
-      break;
-    case JANUARY_COLORS.yellow:
-      turnRedLightYellow(you);
-      break;
-    default:
-      turnRedWhite(you);
+  if (window.navigator.userAgent.includes('WebKit') && !window.navigator.userAgent.includes('Chrome')) {
+    you.style.filter = 'brightness(0)'
+  } else {
+    switch (time.foregroundColor) {
+      case JANUARY_COLORS.black:
+        turnRedBlack(you);
+        break;
+      case JANUARY_COLORS.red:
+        turnRedMutedRed(you);
+        break;
+      case JANUARY_COLORS.white:
+        turnRedWhite(you);
+        break;
+      case JANUARY_COLORS.yellow:
+        turnRedLightYellow(you);
+        break;
+      default:
+        turnRedWhite(you);
+    }
   }
   parent.append(you);
 }
