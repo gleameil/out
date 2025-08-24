@@ -1,4 +1,4 @@
-import { AudioURLSrc, ImagePathAndAltText, ImageURLSrc, LinearGradient } from './constants';
+import { AudioURLSrc, ImagePathAndAltText, ImageURLSrc, IN, LinearGradient } from './constants';
 
 export function makeLinearGradient(gradient: LinearGradient): string {
   return `linear-gradient(${gradient.degrees}deg, ${gradient.color1}, ${gradient.color2})`;
@@ -80,6 +80,20 @@ export function createDivWithElements(elementsToAdd: HTMLElement[], classNames: 
   if (id) { div.id = id; }
   div.append(...elementsToAdd); 
   return div;
+}
+
+export function createHomewardButton(text: string, classNames: string[], goBack: (e: Event) => void) {
+  const button = document.createElement('button');
+  button.innerText = text;
+  button.classList.add(...classNames)
+  button.id = 'homeward';
+  button.addEventListener('click', goBack);
+  return button;
+}
+
+export function goHome(event: Event) {
+  event.stopPropagation();
+  window.location.assign(IN);
 }
 
 export function createButtonWithImage(image: HTMLImageElement, classNames: string[], id: string): HTMLButtonElement {

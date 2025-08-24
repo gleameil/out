@@ -164,14 +164,20 @@ mountain-up-image {
 
 @media (orientation: portrait) {
   .mountain-text-paragraph {
-    width: 100%;
+    width: 80%;
     height: 30%;
     padding: 5vh;
+    padding-top: 7vh;
     }
   
   #mountain-text-image {
     height: auto;
     max-height: 60%;
     max-width: 100%;
+  }
+
+  .bw-midday-ray {
+    top: 20vh;
+    left: 49vw;
   }
 }

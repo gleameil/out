@@ -1,9 +1,9 @@
-import { Time } from "../../../shared/time/time.januaryConstants";
 import { goToNextTimeOfDay, timeOfDayFromDate } from "../../../shared/time/time";
 import { END, FullPoem } from "../january.constants";
 import { MazeTime, TextTime, UpAndDownTime, WalkTime } from "./mountain.constants";
 import './mountain.css';
-import { backgroundForTime, maze, mountainScheduleForNow, text, upAndDown, walk } from "./mountain.helpers";
+import { maze, mountainScheduleForNow, text, upAndDown, walk } from "./mountain.helpers";
+import { createHomewardButton, goHome } from "../../../shared/helpers";
 
 function leaveMountain() {
   document.getElementById('mountain-container')?.remove();
@@ -30,6 +30,8 @@ function getNow(): FullPoem {
 }
 
 export function mountain(enterWeather: () => void) {
+  const homeward = createHomewardButton('Stop looking out the window', ['window'], e => goHome(e));
+
   let clicks = 0;
   const now = getNow();
   const time = timeOfDayFromDate();
@@ -45,6 +47,7 @@ export function mountain(enterWeather: () => void) {
   container.classList.add('window')
   container.id = 'mountain-container';
   container.addEventListener('click', proceed);
+  container.append(homeward);
   document.getElementsByTagName('html')[0].append(container);
   proceed();
 }

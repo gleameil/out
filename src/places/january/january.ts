@@ -8,6 +8,7 @@ import './january.css';
 
 function enterWeather() {
   const schedule = scheduleForNow();
+
   switch(schedule.weather) { // each of these needs to return a div with classNames including itself and 'window'
     case 'night':
       return night(enterWeather);
@@ -21,7 +22,7 @@ function enterWeather() {
       return snowsight(enterWeather);
     case 'whiteout':
       return wordstorm(enterWeather);
-  } 
+  }
 }
 
 export function setUpWindow() {

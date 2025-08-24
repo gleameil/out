@@ -1,4 +1,4 @@
-import { createAudio, expectLetters, setBackground } from "../../../shared/helpers";
+import { createAudio, createHomewardButton, expectLetters, goHome, setBackground } from "../../../shared/helpers";
 import { logs } from './night.constants';
 import { makeClouds, makeStars, twinkleStars } from "./night.helpers";
 import './night.css';
@@ -20,6 +20,7 @@ function next(enterWeather: () => void) {
 }
 
 export function night(enterWeather: () => void) {
+  const homeward = createHomewardButton('Stop looking out the window', ['window'], e => goHome(e));
   document.addEventListener('keydown', e => expectLetters(e, 0, MORNING, () => {
       goToNextKindOfWeather();
       if (getTime().getMonth() === 0) {
@@ -55,6 +56,7 @@ export function night(enterWeather: () => void) {
   container.id = 'night-container';
   container.append(createAudio(new URL('../../../assets/audio/Theme1.ogg', import.meta.url), ['music'], 'night-audio'));
   container.addEventListener('click', proceed);
+  container.append(homeward);
   document.getElementsByTagName('html')[0].append(container);
   proceed();
   playIfAllowed(document.getElementById('night-audio') as HTMLAudioElement);
