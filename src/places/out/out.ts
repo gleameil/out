@@ -25,14 +25,17 @@ export function escapeOut() {
 }
 
 export function out() {
+  const isJanuary = getTime().getMonth() === 0;
   document.addEventListener('keydown', e => expectLetters(e, 0, GETMEOUTTAHERE, () => {
-    if (getTime().getMonth() === 0) {
+    if (isJanuary) {
       escapeOut();
     }
 }), { once: true });
   const all = document.getElementsByTagName('html')[0];
   setBackground(JANUARY_COLORS.gray);
-  console.log('The gray is infinite, and not much happens here, at least not in January... Some say it\'s the most fundamental reality. If you can find your way back In, the weather will clear up before you know it, but it\'s a challenge. If you stay out, it\'s just kinda like this forever :(');
+  if (isJanuary) {
+    console.log('The gray is infinite, and not much happens here, at least not in January... Some say it\'s the most fundamental reality. If you can find your way back In, the weather will clear up before you know it, but it\'s a challenge. If you stay out, it\'s just kinda like this forever :(');
+  }
   const audio = createAudio(new URL('../../assets/audio/desolation.mp3', import.meta.url), ['music'], 'window-out-audio');
   audio.currentTime = 160.0;
   audio.loop = true;

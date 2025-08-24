@@ -49,7 +49,8 @@ export const UTTERANCE_SERIES: string[][][] = [
             'is someone singing out there?',
             'weird',
             'creepy, no "almost" about it',
-            'I need to go back in',
+            'I need to go back in but I literally can\'t',
+            'What if I just start clicking stuff?',
         ],
         [
             'huh',
@@ -78,6 +79,8 @@ export const UTTERANCE_SERIES: string[][][] = [
             'wordsssssss',
             ';kljasf;jlkfsad',
             'I give up',
+            'Snow is pretty',
+            'Maybe I can catch a snowflake',
         ],
         [
             'Where am I?',
@@ -104,6 +107,8 @@ export const UTTERANCE_SERIES: string[][][] = [
             'Why is something this monotonous compelling?',
             'I want to stop but I almost can\'t',
             'What was that Jennie said there\'s a way home',
+            'It seems to have disappeared',
+            'but I\'m sure there\'s some workaround...'
         ],
         [
             'Jennie? Jennie?',
@@ -127,6 +132,7 @@ export const UTTERANCE_SERIES: string[][][] = [
             'Or is it Jennie?',
             'or a stranger?',
             'What if it\'s me? Somehow...',
+            'Snow is comforting though.'
         ],
     ]
 ]
