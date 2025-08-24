@@ -16,6 +16,8 @@ export interface SnowflakeParams {
   size?: number;
   left?: number;
   top?: number;
+  clickHandler?: () => void;
+  hoverColor?: JanuaryColor;
 }
 
 function snowflake(snowflakeParams: SnowflakeParams) {
@@ -25,7 +27,9 @@ function snowflake(snowflakeParams: SnowflakeParams) {
       font,
       size,
       left,
-      top
+      top,
+      clickHandler,
+      hoverColor,
   } = snowflakeParams;
   const flake = document.createElement('span');
   flake.classList.add('snowflake', 'wordstorm');
@@ -35,6 +39,13 @@ function snowflake(snowflakeParams: SnowflakeParams) {
   flake.style.fontSize = `${size ?? Math.random() * 16}vmin`;
   flake.style.left = `${left ?? Math.random() * 130 - 15}vw`;
   flake.style.top = `${top ?? Math.random() * 140 - 25}vh`;
+  if (clickHandler) {
+    flake.addEventListener('click', clickHandler);
+  }
+  if (hoverColor) {
+    flake.addEventListener('mouseleave', () => flake.style.color = color ?? JANUARY_COLORS.white);
+    flake.addEventListener('mouseenter', () => flake.style.color = hoverColor);
+  }
   parent.append(flake);
 }
 function fadeLastStorm(className = 'snowflake') {
@@ -53,19 +64,23 @@ export interface SnowstormParams {
   parent: HTMLDivElement;
   colors: JanuaryColor[];
   quantity: number;
+  clickHandler?: () => void;
+  hoverColor?: JanuaryColor;
 }
 
-function snowstorm(snowstormParams: SnowstormParams) {
+export function snowstorm(snowstormParams: SnowstormParams) {
   const {
       parent,
       colors,
       quantity,
+      clickHandler,
+      hoverColor,
   } = snowstormParams;
   fadeLastStorm();
 
   for (let i = 0; i < quantity; i ++) {
       const color = colors[Math.floor(Math.random() * colors.length)];
-      snowflake({ parent, color });
+      snowflake({ parent, color, clickHandler, hoverColor });
   }
 }
 

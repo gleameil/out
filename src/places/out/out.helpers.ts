@@ -1,4 +1,8 @@
+import { JANUARY_COLORS } from "../../shared/color";
 import { makeCoordinateStringVH, makeCoordinateStringVW, randomInRange, randomIntegerInRange, removeByClassName } from "../../shared/helpers";
+import { getTime, goToNextKindOfWeather } from "../../shared/time/time";
+import { snowstorm } from "../january/wordstorm/wordstorm.helpers";
+import { escapeOut } from "./out";
 import { cloudCircleClassName, cloudCircleClassNameColors, cloudCircleCountMaximum, cloudCircleCountMinimum, cloudCircleDiameterMaximum, cloudCircleDiameterMinimum, cloudCount, firstCoordinates, longestTimeOut, phraseCountMaximum, phraseCountMinimum, phraseLocationMaximum, phraseLocationMinimum, song, UTTERANCE_SERIES } from "./out.constants";
 
 // Make clouds
@@ -97,18 +101,22 @@ export function removeOldElements(oldCounter: number) {
 }
 
 
-export function move(counter: number, parent: HTMLDivElement, isVerna: boolean = false) {
+export function move(counter: number, parent: HTMLDivElement) {
   localStorage.setItem('counter', `${counter}`);
   const oldCounter = counter + 1;
   setTimeout(() => removeOldElements(oldCounter), 2000);
-  if (isVerna && counter === 0) {
-    return;
-  }
   makeClouds(counter, parent);
-  if (!isVerna) {
-    addWords(counter, parent);
-  };
-  setTimeout(() => move(counter - 1, parent, isVerna), 10000);
+  addWords(counter, parent);
+  if (getTime().getMonth() === 0) {
+    snowstorm({
+      parent: parent,
+      colors: [JANUARY_COLORS.lightGray],
+      quantity: 50,
+      clickHandler: escapeOut,
+      hoverColor: JANUARY_COLORS.white,
+    })
+  }
+  setTimeout(() => move(counter - 1, parent), 10000);
 }
 
 export function setNewPossibleUtterance(utteranceSet: number, i: number, currentPossibleUtterances: string[]) {

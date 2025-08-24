@@ -20,15 +20,14 @@ export function escapeOut() {
   setTimeout(() => {
     removeByClassName('out');
     goToNextKindOfWeather();
+    setUpWindow();
   }, 10);
 }
 
 export function out() {
   document.addEventListener('keydown', e => expectLetters(e, 0, GETMEOUTTAHERE, () => {
     if (getTime().getMonth() === 0) {
-      goToNextKindOfWeather();
       escapeOut();
-      setUpWindow();
     }
 }), { once: true });
   const all = document.getElementsByTagName('html')[0];

@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.out-container snowflake:hover {
+  color: cyan;
+}
+
 /* Speak into the void */
 
 #speak {
