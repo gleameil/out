@@ -18,6 +18,7 @@
   bottom: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .snowsight-option-button {
@@ -118,11 +119,22 @@
     bottom: 0;
   }
 
+  .snowsight-jennie {
+    position: absolute;
+  }
+
   #snowsight-bottom-dialogue-box {
     height: 15vh;
     position: sticky;
     display: flex;
     align-items: center;
     background-color: white;
+  }
+
+  .snowsight-dialogue {
+    font-size: 3.5vmin;
+  }
+  .snowsight-option-box {
+    position: sticky;
   }
 }

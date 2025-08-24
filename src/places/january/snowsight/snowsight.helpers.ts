@@ -42,6 +42,7 @@ function offerOptions(options: Option[]) {
     optionBox.append(optionButton);
     return optionButton;
   })
+  document.getElementById('snowsight-bottom-dialogue-box')!.style.display = 'none';
   container.append(optionBox);
   return optionButtons;
 }
@@ -63,6 +64,7 @@ function showWords(words: string, speaker: Speaker, imageIndex: number) {
   textElement.innerText = words;
 
   const box = document.getElementById('snowsight-bottom-dialogue-box')!;
+  box.style.display = 'flex';
   box.style.backgroundColor = realSpeaker.backgroundColor ?? JANUARY_COLORS.white;
   box.append(speakerName, textElement);
 

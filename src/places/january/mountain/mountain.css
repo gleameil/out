@@ -160,3 +160,16 @@ mountain-up-image {
   height: 102vh;
   object-fit: cover;
 }
+
+@media (orientation: portrait) {
+  .mountain-text-paragraph {
+    width: 100%;
+    height: 30%;
+    padding: 5vh;
+    }
+  
+  #mountain-text-image {
+    height: auto;
+    width: 100vw;
+  }
+}
