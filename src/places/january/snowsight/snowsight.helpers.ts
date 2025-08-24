@@ -166,17 +166,23 @@ export function setUpSnowsight(today: number, nextTime: () => void) {
   const dialogueBox = document.createElement('div');
   dialogueBox.id = 'snowsight-bottom-dialogue-box';
   dialogueBox.classList.add('window', 'snowsight', 'snowsight-dialogue-box');
-  parent.append(dialogueBox);
 
-  makeJenny(parent);
-  makeYou(talkOfTheDay.time, parent);
+  const conversation = document.createElement('div');
+  conversation.id = 'snowsight-conversation';
+  conversation.classList.add('window', 'snowsight');
   
-  makeColorJennies(SNOWSIGHT_SPEAKERS.violetJennie, parent);
-  makeColorJennies(SNOWSIGHT_SPEAKERS.indigoJennie, parent);
-  makeColorJennies(SNOWSIGHT_SPEAKERS.moonJennie, parent);
-  makeColorJennies(SNOWSIGHT_SPEAKERS.goldJennie, parent);
-  makeColorJennies(SNOWSIGHT_SPEAKERS.greenJennie, parent);
-  makeColorJennies(SNOWSIGHT_SPEAKERS.redJennie, parent);
+  parent.append(conversation);
+  parent.append(dialogueBox)
+
+  makeJenny(conversation);
+  makeYou(talkOfTheDay.time, conversation);
+  
+  makeColorJennies(SNOWSIGHT_SPEAKERS.violetJennie, conversation);
+  makeColorJennies(SNOWSIGHT_SPEAKERS.indigoJennie, conversation);
+  makeColorJennies(SNOWSIGHT_SPEAKERS.moonJennie, conversation);
+  makeColorJennies(SNOWSIGHT_SPEAKERS.goldJennie, conversation);
+  makeColorJennies(SNOWSIGHT_SPEAKERS.greenJennie, conversation);
+  makeColorJennies(SNOWSIGHT_SPEAKERS.redJennie, conversation);
 
   snowsee(talkOfTheDay.dialogue, 0, nextTime);
 }

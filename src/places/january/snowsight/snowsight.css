@@ -46,8 +46,8 @@
   left: 0;
   display: flex;
   align-items: center;
-  /* border: 2px solid black; */
   background-color: white;
+  z-index: 2;
 }
 
 .snowsight-person {
@@ -88,8 +88,47 @@
 }
 
 #snowsight-you {
-  position: absolute;
   right: 0;
   bottom: 0;
   max-height: 98vh;
+  z-index: 1;
+}
+
+@media (orientation: portrait) {
+  #snowsight-container {
+    position: relative;
+    width: 102vw;
+    height: 102vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #snowsight-conversation {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-between;
+    height: 86vh;
+
+  }
+
+  #snowsight-you {
+    max-width: 60vw;
+    height: auto;
+  }
+  #snowsight-jenny {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  #snowsight-bottom-dialogue-box {
+    /* width: 102vw;
+    height: 14.482vh; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
 }
