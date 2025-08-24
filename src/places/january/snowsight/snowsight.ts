@@ -2,6 +2,8 @@ import { getTime, goToNextTimeOfDay } from "../../../shared/time/time";
 import { setUpSnowsight } from "./snowsight.helpers";
 import './snowsight.css';
 
+// for testing: http://localhost:8080/time=1704138240000
+
 function leaveSnowsight() {
   document.getElementById('snowsight-container')?.remove();
 }
