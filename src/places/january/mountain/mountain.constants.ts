@@ -164,12 +164,14 @@ export interface ParagraphEntry {
   format: 'paragraph',
   paragraph?: number,
   effect?: string,
+  log?: string,
 }
 
 export interface RandomEntry {
   words: string,
   format: 'random',
   effect?: string,
+  log?: string,
 }
 
 export type TextEntry = ParagraphEntry | RandomEntry;
@@ -186,44 +188,54 @@ const FACELESS_AFTERNOON: TextEntry[] = [
   {
     words: 'fidgets at the beginning of your journey.',
     format: 'paragraph',
+    log: 'In this sunny weather,',
   },
   {
     words: 'Without face or gender,',
     format: 'paragraph',
+    log: 'the creation of this artwork begins to come into focus',
   },
   {
     words: 'they do not see you,',
     format: 'paragraph',
+    log: 'in a more prosaic way.',
   },
   {
     words: 'but they obtrude painfully.',
     format: 'paragraph',
+    log: 'I, Jenny,',
   },
   {
     words: 'If I were you, reader, and I knew',
     format: 'paragraph',
+    log: 'have claimed some of Jennie\'s life',
   },
   {
     words: 'what this was supposed to be,',
     format: 'paragraph',
+    log: 'and linked it to my own,',
   },
   {
     words: 'I\'d want it to open with wonder or insight, not scribbles',
     format: 'paragraph',
+    log: 'though unpredictably.',
   },
   {
     words: 'and an all-too-human individual in jeans.',
     format: 'paragraph',
+    log: 'As for the figure our narrator is on about,',
   },
   {
     words: 'Is this faceless scribble you,',
     format: 'paragraph',
     paragraph: 1,
+    log: 'I can only say,',
   },
   {
     words: 'reader? You, who are',
     format: 'paragraph',
     paragraph: 1,
+    log: 'I hope you enjoy ambiguity.',
   },
   {
     words: 'and may well remain to the physical being typing these words,',
@@ -548,6 +560,7 @@ const FACELESS_SUNSET: TextEntry[] = [
     words: `I will not even try.`,
     format: 'paragraph',
     paragraph: 4,
+    log: '<3 ~ <*> || <*> ~ E>',
   },
 ] as const;
 const FACELESS_DUSK: TextEntry[] = [
@@ -583,6 +596,7 @@ const FACELESS_DUSK: TextEntry[] = [
     words: `but I'm not counting on it. Let us try to forget them and move on.`,
     format: 'paragraph',
     effect: 'facelessDwindle',
+    log: 'See what I mean, ambiguity?',
   },
 ] as const;
 
@@ -639,31 +653,37 @@ const MIRRORS_DAWN: TextEntry[] = [
     words: `Jennie’s favorite writer was clear, sweet, cruel, and golden-tongued J,`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'You probably would know who J is,'
   },
   {
     words: `whose best novel  was the one about faces and veils she wrote with her late-found partner —`,
     format: 'paragraph',
     paragraph: 2,
+    log: '(not any kind of Jennifer, btw)'
   },
   {
     words: `a graceful book, with more than a trace of the poetry she had originally meant it to be. But better still`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'but I obfuscate',
   },
   {
     words: `was J’s philosophy, razor-sharp, intricate, evocative, and perfectly mad,`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'to let you see anew,',
   },
   {
     words: `describing a world simpler than elsewhere as Jennie knew it but beautiful with the same beauty.`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'and give you the fun of speculating',
   },
   {
     words: `J prays for a face, but she is no lover of mirrors.`,
     format: 'paragraph',
     paragraph: 3,
+    log: 'while I\'m at it.',
   },
 ];
 const MIRRORS_SUNRISE: TextEntry[] = [
@@ -689,6 +709,7 @@ const MIRRORS_SUNRISE: TextEntry[] = [
     words: `My characters live in the mirror, but the person I want to be, slimmer and sharper, does not,`,
     format: 'paragraph',
     paragraph: 1,
+    log: 'This is pretty literal; growing up, I based plenty of fanfic characters who had little enough in common with me on my reflection.'
   },
   {
     words: `and a human body does not describe  Jennie at all —`,
@@ -713,10 +734,12 @@ const MIRRORS_MORNING: TextEntry[] = [
   {
     words: `(Impossible, you say, if you say images are the best we can do.)`,
     format: 'paragraph',
+    log: 'Insert some vaguely postmodern ideas about the impossibility of unmediated perception.',
   },
   {
     words: `(In and Out trade places, even meanings.)`,
     format: 'paragraph',
+    log: 'I tend to think, with many such dilemmas, that unmediated perception is impossible only as Zeno\'s paradox makes moving impossible.',
   },
   {
     words: `I looked in the mirror once and saw, behind my reflection, sunlight and dew and wind and green things starting to grow,`,
@@ -751,10 +774,12 @@ const MIRRORS_MIDDAY: TextEntry[] = [
   {
     words: `She came to a park, passed the duck pond and the jungle gym`,
     format: 'paragraph',
+    log: 'If all goes according to plan,',
   },
   {
     words: `and the joggers and the old couples on benches, and came to the river.`,
     format: 'paragraph',
+    log: 'you will certainly see this park again in years to come.',
   },
   {
     words: `The water, a swirling brown pool bordered by a fallen tree, held no reflection.`,
@@ -944,16 +969,19 @@ const MIRRORS_AFTERNOON: TextEntry[] = [
     words: `not even enough convolutions of heart`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'I try to appreciate minimalism',
   },
   {
     words: `to justify them in the eyes of others, so she supposed that cluttered they would surely be —`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'but rarely succeed.',
   },
   {
     words: `someday.`,
     format: 'paragraph',
     paragraph: 2,
+    log: 'Someday.',
   },
 ];
 
@@ -1063,6 +1091,7 @@ const OLD_GOLD: TextEntry[] = [
     words: `confusing and annoying the neighbors.`,
     format: 'paragraph',
     paragraph: 5,
+    log: 'OCD runs in the family.',
   },
   {
     words: `Mom had thrown out almost everything Jennie had drawn or written as a child,`,
@@ -1380,7 +1409,7 @@ const OLD_GOLD: TextEntry[] = [
     paragraph: 21,
   },
   {
-    words: `“Not my thing,” Jennie murmured, as she considered synonyms for convoluted and settled on the too-clever twisting.`,
+    words: `“Not my thing,” Jennie murmured, as she considered synonyms for convoluted and settled on the too-clever *twisting*.`,
     format: 'paragraph',
     paragraph: 21,
   },
@@ -1628,16 +1657,19 @@ const TRYING: TextEntry[] = [
     words: `Or so they all —`,
     format: 'paragraph',
     paragraph: 9,
+    log: 'Or, perhaps,',
   },
   {
     words: `everyone —`,
     format: 'paragraph',
     paragraph: 9,
+    log: 'because a beautiful fiction',
   },
   {
     words: `would be ready when it came for them?`,
     format: 'paragraph',
     paragraph: 9,
+    log: 'is its own reward and justification.',
   },
 ];
 const SPRING_AND_EMMA: TextEntry[] = [

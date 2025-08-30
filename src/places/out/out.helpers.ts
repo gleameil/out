@@ -3,7 +3,7 @@ import { makeCoordinateStringVH, makeCoordinateStringVW, randomInRange, randomIn
 import { getTime, goToNextKindOfWeather } from "../../shared/time/time";
 import { snowstorm } from "../january/wordstorm/wordstorm.helpers";
 import { escapeOut } from "./out";
-import { cloudCircleClassName, cloudCircleClassNameColors, cloudCircleCountMaximum, cloudCircleCountMinimum, cloudCircleDiameterMaximum, cloudCircleDiameterMinimum, cloudCount, firstCoordinates, longestTimeOut, phraseCountMaximum, phraseCountMinimum, phraseLocationMaximum, phraseLocationMinimum, song, UTTERANCE_SERIES } from "./out.constants";
+import { cloudCircleClassName, cloudCircleClassNameColors, cloudCircleCountMaximum, cloudCircleCountMinimum, cloudCircleDiameterMaximum, cloudCircleDiameterMinimum, cloudCount, firstCoordinates, longestTimeOut, phraseCountMaximum, phraseCountMinimum, phraseLocationMaximum, phraseLocationMinimum, song, JANUARY_UTTERANCE_SERIES } from "./out.constants";
 
 // Make clouds
 
@@ -120,7 +120,7 @@ export function move(counter: number, parent: HTMLDivElement) {
 }
 
 export function setNewPossibleUtterance(utteranceSet: number, i: number, currentPossibleUtterances: string[]) {
-  let series = UTTERANCE_SERIES[utteranceSet][i];
+  let series = JANUARY_UTTERANCE_SERIES[utteranceSet][i];
   if (series.length > 0) {
       const newUtterance = series.shift() ?? '';
       (document.getElementById(`utterance${i}`) as HTMLOptionElement)!.innerText = newUtterance;
@@ -141,7 +141,7 @@ export function speak(event: KeyboardEvent) {
 
 export function checkIfUtteranceSelected(event: InputEvent, currentPossibleUtterances: string[]) {
   const whatIsBeingSaid = (event.target as HTMLInputElement).value;
-  for (let i = 0; i < UTTERANCE_SERIES[0].length; i++) { // will be based on what user has seen eventually once there are more utterance series
+  for (let i = 0; i < JANUARY_UTTERANCE_SERIES[0].length; i++) { // will be based on what user has seen eventually once there are more utterance series
       if (currentPossibleUtterances[i] === whatIsBeingSaid) {
           setNewPossibleUtterance(0, i, currentPossibleUtterances); 
           let oldWords = localStorage.getItem('chosenWords') ?? '';
@@ -158,7 +158,7 @@ export function setUpSpeech(utteranceSet: number, currentPossibleUtterances: str
   const speech = document.getElementById('speak');
   speech?.addEventListener('keyup', event => speak(event));
   speech?.addEventListener('change', event => checkIfUtteranceSelected((event as InputEvent), currentPossibleUtterances));
-  for (let i = 0; i < UTTERANCE_SERIES[utteranceSet].length; i++) {
+  for (let i = 0; i < JANUARY_UTTERANCE_SERIES[utteranceSet].length; i++) {
       setNewPossibleUtterance(utteranceSet, i, currentPossibleUtterances);
   }
 }

@@ -29,7 +29,7 @@ export const phraseLocationMaximum = 98;
 
 // utterances
 
-export const UTTERANCE_SERIES: string[][][] = [
+export const JANUARY_UTTERANCE_SERIES: string[][][] = [
     [
         [
             'bad weather',
@@ -135,4 +135,10 @@ export const UTTERANCE_SERIES: string[][][] = [
             'Snow is comforting though.'
         ],
     ]
+]
+
+export const MAIN_UTTERANCE_SERIES: string[][][] = [
+    [
+        [],
+    ],
 ]
