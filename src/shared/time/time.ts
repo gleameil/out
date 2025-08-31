@@ -24,7 +24,7 @@ function setTimeFromQueryAndRemoveParam(): boolean {
   if (evernostianNowTimestamp) {
     setTime(new Date(evernostianNowTimestamp));
     query.delete('time');
-    window.history.replaceState({}, '', window.location.href.replace(window.location.search, query.toString()));
+    window.history.replaceState({}, '', window.location.href.replace(window.location.search, ''));
     return true
   }
   return false

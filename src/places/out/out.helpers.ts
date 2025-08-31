@@ -111,7 +111,7 @@ export function move(counter: number, parent: HTMLDivElement) {
     snowstorm({
       parent: parent,
       colors: [JANUARY_COLORS.lightGray],
-      quantity: Math.floor(Math.random()) * 45 + 5,
+      quantity: Math.floor(Math.random()) * 45 + 20,
       clickHandler: escapeOut,
       hoverColor: JANUARY_COLORS.white,
     })
