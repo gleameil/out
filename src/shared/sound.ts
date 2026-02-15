@@ -38,10 +38,15 @@ function togglePlayingSound() {
   }
 }
 
+export function canPlayFromQueryParam(query: URLSearchParams): boolean {
+  const canPlayFromQuery = query.get('canPlay');
+  return canPlayFromQuery === 'true';
+} 
+
 export function createSoundControl(): HTMLButtonElement {
   let windowWithAudio = (window as unknown) as WindowWithAudio;
-  windowWithAudio.canPlayAudio = false;
-  const soundControl = createButtonWithText('🔇', [], 'sound-control');
+  windowWithAudio.canPlayAudio = canPlayFromQueryParam(new URLSearchParams(window.location.search));
+  const soundControl = createButtonWithText(windowWithAudio.canPlayAudio ? '🔈' : '🔇', [], 'sound-control');
   soundControl.addEventListener('click', togglePlayingSound);
   return soundControl;
 }

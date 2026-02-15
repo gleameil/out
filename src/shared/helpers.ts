@@ -1,4 +1,5 @@
 import { AudioURLSrc, ImagePathAndAltText, ImageURLSrc, IN, LinearGradient } from './constants';
+import { canPlayAudio } from './sound';
 
 export function makeLinearGradient(gradient: LinearGradient): string {
   return `linear-gradient(${gradient.degrees}deg, ${gradient.color1}, ${gradient.color2})`;
@@ -93,7 +94,9 @@ export function createHomewardButton(text: string, classNames: string[], goBack:
 
 export function goHome(event: Event) {
   event.stopPropagation();
-  window.location.assign(IN);
+  const inUrl = new URL(IN);
+  inUrl.searchParams.append('canPlay', `${canPlayAudio()}`);
+  window.location.assign(inUrl);
 }
 
 export function createButtonWithImage(image: HTMLImageElement, classNames: string[], id: string): HTMLButtonElement {
