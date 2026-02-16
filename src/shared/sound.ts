@@ -43,9 +43,17 @@ export function canPlayFromQueryParam(query: URLSearchParams): boolean {
   return canPlayFromQuery === 'true';
 } 
 
+function canPlayFromQueryParamRemovingQuery(): boolean {
+  const query = new URLSearchParams(window.location.search);
+  const canPlay = canPlayFromQueryParam(new URLSearchParams(query));
+  window.location.replace(window.location.href.replace(window.location.search, query.toString()));
+  return canPlay;
+}
+
+
 export function createSoundControl(): HTMLButtonElement {
   let windowWithAudio = (window as unknown) as WindowWithAudio;
-  windowWithAudio.canPlayAudio = canPlayFromQueryParam(new URLSearchParams(window.location.search));
+  windowWithAudio.canPlayAudio = canPlayFromQueryParamRemovingQuery();
   const soundControl = createButtonWithText(windowWithAudio.canPlayAudio ? '🔈' : '🔇', [], 'sound-control');
   soundControl.addEventListener('click', togglePlayingSound);
   return soundControl;
