@@ -1,6 +1,7 @@
 import { JanuaryColor } from "./color";
 
-export const IN = 'https://gleameil.github.io/in'
+// export const IN = 'https://gleameil.github.io/in'
+export const IN = 'http://localhost:1234';
 
 export interface ImageURLSrc {
   src: URL;

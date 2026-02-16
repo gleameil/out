@@ -1,5 +1,4 @@
 import { Day, JANUARY_SCHEDULE, Time, TimeForDay, TIMES } from "./time.januaryConstants";
-import { BEGINNING_OF_FEBRUARY } from "./time.februaryConstants";
 import { WindowWithClock } from "./time.sharedConstants";
 
 export function setTime(time: Date) {
@@ -17,25 +16,14 @@ export function advanceTimeBy(minutes: number) {
 }
 
 // It would be prettier to have these in getTime() but we do not want to go through these shenanigans every time we need the time
-function setTimeFromQueryAndRemoveParam(): boolean {
-  const query = new URLSearchParams(window.location.search);
+export function setTimeFromQuery(query: URLSearchParams) {
   const evernostianNowStringFromQuery = query.get('time');
   const evernostianNowTimestamp = parseInt(evernostianNowStringFromQuery ?? '');
   // should never be falsy, aka 0, aka the epoch, because this creation does not go that far back in time
   if (evernostianNowTimestamp) {
     setTime(new Date(evernostianNowTimestamp));
-    query.delete('time');
-    window.history.replaceState({}, '', window.location.href.replace(window.location.search, ''));
-    return true
-  }
-  return false
-}
-
-// Time does not advance second-by-second Out but rather when you get through a given piece of content
-export function startTime() {
-  const queryDidContainTime = setTimeFromQueryAndRemoveParam();
-  if (!queryDidContainTime) {
-    setTime(getTime()); // sets time to whatever is in localStorage, or if nothing, Jan 1
+  } else {
+    setTime(getTime());
   }
 }
 

@@ -1,18 +1,18 @@
 import { out } from "./places/out/out";
 import { setUpWindow } from "./places/january/january";
-import { startTime, getTime } from "./shared/time/time"
-import { createSpan, expectLetters, removeByClassName } from "./shared/helpers";
+import { getTime } from "./shared/time/time"
+import { createSpan, expectLetters, handleQueryParams, removeByClassName } from "./shared/helpers";
 import { createSoundControl, SOUND_CONTROL_ID } from "./shared/sound";
 
 const LETTERS = 'evernost'
 
 function start() {
+    handleQueryParams();
     const all = document.getElementsByTagName('html')[0];
     if (!document.getElementById(SOUND_CONTROL_ID)) {
         all.append(createSoundControl());
     }
     removeByClassName('under-construction');
-    startTime()
     console.log('You have gone Out.')
     if (getTime().getMonth() === 0) {
         setUpWindow()

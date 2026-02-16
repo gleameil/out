@@ -1,7 +1,7 @@
 import { LinearGradient } from '../constants';
 import { JanuaryColor, JANUARY_COLORS } from '../color'
 
-export const BEGINNING_OF_JANUARY = new Date(2024, 0);
+export const BEGINNING_OF_JANUARY = new Date(2024, 0).getTime();
 
 export interface Time {
   name: TimeName;

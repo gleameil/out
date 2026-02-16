@@ -1,5 +1,6 @@
 import { AudioURLSrc, ImagePathAndAltText, ImageURLSrc, IN, LinearGradient } from './constants';
-import { canPlayAudio } from './sound';
+import { canPlayAudio, setCanPlayFromQuery } from './sound';
+import { setTimeFromQuery } from './time/time';
 
 export function makeLinearGradient(gradient: LinearGradient): string {
   return `linear-gradient(${gradient.degrees}deg, ${gradient.color1}, ${gradient.color2})`;
@@ -159,4 +160,12 @@ export function expectLetters(e: KeyboardEvent, index: number, letters: string, 
     if (e.key === letters[index]) {
         document.addEventListener('keydown', e => expectLetters(e, index + 1, letters, callback), { once: true });
     }
+}
+
+export function handleQueryParams() {
+
+  const query = new URLSearchParams(window.location.search);
+  setTimeFromQuery(query);
+  setCanPlayFromQuery(query);
+  window.history.replaceState({}, '', window.location.href.replace(query.toString(), '')); 
 }
