@@ -19,6 +19,9 @@ function next(enterWeather: () => void) {
 
 function getPoem(): FullPoem {
   const schedule = wordstormScheduleForNow();
+  if (!schedule) {
+    throw new Error('missing wordstorm schedule');
+  }
   if (schedule.log) {
     console.log(schedule.log);
   }
@@ -36,7 +39,8 @@ function getPoem(): FullPoem {
 
 export function wordstorm(enterWeather: () => void) {
   setUpSound();
-  const homeward = createHomewardButton('Stop looking out the window', ['window'], e => goHome(e));  let clicks = 0;
+  const homeward = createHomewardButton('Stop looking out the window', ['window'], e => goHome(e));
+  let clicks = 0;
   const poem = getPoem();
   const time = timeOfDayFromDate();
   const instrument = bellAndScaleForTime(time);
