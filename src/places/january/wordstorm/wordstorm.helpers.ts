@@ -267,9 +267,9 @@ export function whiteoutMiddayOrDispensation(words: string[]): FullPoem {
   interface MoveSunParams {
     rightBy: number;
     upBy: number;
-    lastPosition: SunRayPosition;
+    lastPosition?: SunRayPosition;
   }
-  function moveSun({ rightBy, upBy, lastPosition = SUN_RAY_START }) {
+  function moveSun({ rightBy, upBy, lastPosition = SUN_RAY_START }: MoveSunParams) {
     const rays = document.getElementsByClassName('ray');
     const newPosition: SunRayPosition = { 
       top: lastPosition.top - upBy, 
@@ -566,6 +566,6 @@ export function locationForClick(e: MouseEvent) {
 }
 
 
-export function wordstormScheduleForNow(): BrainstormTime {
+export function wordstormScheduleForNow(): BrainstormTime | undefined {
   return WORDSTORM_SCHEDULE[dayOfTheMonth() - 1][timeOfDayFromDate().name];
 }
