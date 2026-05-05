@@ -1184,7 +1184,7 @@ export const JANUARY_THAW: FragmentedPoem = [
   },
   {
     words: 'we\'ve none —',
-    line: 4,
+    line: 3,
   },
   {
     words: 'just rain, now, so through puddles —',
