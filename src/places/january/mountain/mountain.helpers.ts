@@ -162,6 +162,6 @@ export function upAndDown(schedule: UpAndDownTime): FullPoem {
 }
 
 export function mountainScheduleForNow(): MountainTime {
-  return MOUNTAIN_SCHEDULE[dayOfTheMonth() - 1][timeOfDayFromDate().name];
+  return MOUNTAIN_SCHEDULE[dayOfTheMonth() - 1][timeOfDayFromDate().name]!;
 }
 

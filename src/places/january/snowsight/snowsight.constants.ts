@@ -1721,7 +1721,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     },
   ]},
   14: {
-    time: TIMES[5],
+    time: TIMES[4],
     dialogue: [ // jenny, redJennie
     {
       words: 'Maybe you\'re coming for us —',

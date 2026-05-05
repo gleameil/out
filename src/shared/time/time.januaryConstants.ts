@@ -1245,11 +1245,11 @@ export const JANUARY_SCHEDULE: Day[] = [
     },
   },
   {
-    weeHours: {
+    weeHours: { // Tree of life explorations
       hours: 0,
       minutes: 0,
-      weather: 'cloudy',
-      prediction: 'Cloudy.',
+      weather: 'clear',
+      prediction: 'Clear.',
       temperature: 21,
     },
     dawn: { // firebird painting
