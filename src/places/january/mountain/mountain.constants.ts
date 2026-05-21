@@ -8359,7 +8359,7 @@ const RAIN: TextEntry[] = [
     paragraph: 1,
   },
 ];
-const ELWEWHERE_BEYOND_ELSEWHERE: TextEntry[] = [
+const ELSEWHERE_BEYOND_ELSEWHERE: TextEntry[] = [
   {
     words: `Elsewhere beyond elsewhere,`,
     format: 'paragraph',
@@ -9479,7 +9479,7 @@ export const MOUNTAIN_SCHEDULE: MountainDay[] = [
       },
       down: {
         typeName: 'text',
-        words: ELWEWHERE_BEYOND_ELSEWHERE,
+        words: ELSEWHERE_BEYOND_ELSEWHERE,
         image: MOUNTAIN_IMAGES.room,
       },
     },
