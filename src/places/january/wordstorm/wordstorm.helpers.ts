@@ -351,6 +351,7 @@ export function whiteoutMiddayOrDispensation(words: string[]): FullPoem {
     if (clicks <= 12) {
       dispensationTo(parent, ALL_BY_DISPENSATION, clicks, iterations);
       snowstorm({ parent, colors: time.whiteoutSnowflakeColors, quantity: Math.floor(Math.random() * 3) + 3})
+      return;
     }
     const newIterations = `${iterations + 1}`;
     localStorage.setItem('dispensations', newIterations);
