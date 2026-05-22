@@ -172,6 +172,14 @@ export const SNOWSIGHT_SPEAKERS: { [key: string]: Speaker } = {
   },
 } as const;
 
+export const SNOWSIGHT_LOG_COLORS = {
+  amanuensis: JANUARY_COLORS.gold,   // gold — your design system
+  orangeJennie: JANUARY_COLORS.orange, // warm orange, distinct from gold
+  blueJennie: JANUARY_COLORS.blue,   // mid blue, readable on dark bg
+} as const;
+
+export type LogAuthor = keyof typeof SNOWSIGHT_LOG_COLORS;
+
 export interface Statement {
   words: string;
   speaker?: Speaker;
@@ -416,6 +424,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'But that sweet pale yellow can be death.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'She says this as if it is the most natural thing. It might be. [A]',
     },
     {
       words: 'Don\'t you, too, sometimes want to disappear?',
@@ -440,6 +449,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'intrinsically.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'She is spinning in a sun costume while she says this. I want you to hold both of those facts at once. [A]',
     },
     {
       words: 'But I shouldn\'t talk.',
@@ -468,6 +478,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'but Saint Augustine all but says Hitler in hell',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'He does, more or less. City of God, Book XI. I have complicated feelings about this argument. [A]',
     },
     {
       words: 'is better than a rock...',
@@ -504,6 +515,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'I sit in sunbeams like a cat.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'This is the most relatable thing anyone says in January. [A]',
     },
     {
       words: 'Phototaxy.',
