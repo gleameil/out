@@ -2114,7 +2114,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'the abstractions within walking distance of the soul.',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
-              log: `This is the most precise description of indigoJennie's entire epistemology and she says it in passing. It lands somewhere between Plato (the Forms are what the soul naturally apprehends when it turns away from shadows) and Wittgenstein's remark that "what can be said at all can be said clearly, and what one cannot talk about one must pass over in silence" — except indigoJennie rejects the second half, because eternity is exactly what she cannot talk about clearly and also cannot pass over. Her epistemology is structured around a refused silence. [A]`,
+              log: `This is the most precise description of indigoJennie's entire epistemology and she says it in passing. It lands somewhere between Plato (the Forms are what the soul naturally apprehends when it turns away from shadows) and Wittgenstein's remark that what can be said at all can be said clearly, and what one cannot talk about one must pass over in silence — except indigoJennie rejects the second half, because eternity is exactly what she cannot talk about clearly and also cannot pass over. Her epistemology is structured around a refused silence. [A]`,
             },
           ],
         },
