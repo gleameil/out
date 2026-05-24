@@ -173,10 +173,18 @@ export const SNOWSIGHT_SPEAKERS: { [key: string]: Speaker } = {
 } as const;
 
 export const SNOWSIGHT_LOG_COLORS = {
-  amanuensis: JANUARY_COLORS.gold,   // gold — your design system
-  orangeJennie: JANUARY_COLORS.orange, // warm orange, distinct from gold
-  blueJennie: JANUARY_COLORS.blue,   // mid blue, readable on dark bg
+  amanuensis: JANUARY_COLORS.gold,
+  orangeJennie: JANUARY_COLORS.orange,
+  blueJennie: JANUARY_COLORS.blue,
+  jenny: JANUARY_COLORS.gray, 
 } as const;
+
+export const SNOWSIGHT_LOG_FONTS = {
+  amanuensis: FONTS.imFell,
+  orangeJennie: FONTS.rockSalt,
+  blueJennie: FONTS.montserrat,
+  jenny: FONTS.reenieBeanie,
+}
 
 export type LogAuthor = keyof typeof SNOWSIGHT_LOG_COLORS;
 
@@ -208,202 +216,202 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Our friend V,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'Meet Jenny-with-a-y, pencil-gray, I but not Jennie: clattering, chattering would-be "eloquence,"'
+      log: 'Meet Jenny-with-a-y, pencil-gray, I but not Jennie: clattering, chattering would-be "eloquence," [J]'
     },
     {
       words: 'mathematician and visionary,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: '— peekaboo —',
+      log: '— peekaboo — [J]',
     },
     {
       words: 'clings',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'or cynical depression, detailed and dull.'
+      log: 'or cynical depression, detailed and dull. [J]'
     },
     {
       words: '(stern resolve!)',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: 'And here is a flash of childlike light, Jennie-as-sun, here —'
+      log: 'And here is a flash of childlike light, Jennie-as-sun, here — [J]'
     },
     {
       words: 'to visions of the most abstract and real.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'and gone again.'
+      log: 'and gone again. [J]'
     },
     {
       words: 'He wants them true and useful both,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(I, unlike this friend, am almost allergic to usefulness.)'
+      log: '(I, unlike this friend, am almost allergic to usefulness.) [J]'
     },
     {
       words: 'but give me my Way and its nonsense any day.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(A regrettable failing, yes, but if I weren\'t, could I have created this?)'
+      log: '(A regrettable failing, yes, but if I weren\'t, could I have created this?) [J]'
     },
     {
       words: 'Nonsense?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(Is the world where I devoted myself to smart, useful, salable creativity'
+      log: '(Is the world where I devoted myself to smart, useful, salable creativity [J]'
     },
     {
       words: 'Let it be more,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'better than this one really?)'
+      log: 'better than this one really?) [J]'
     },
     {
       words: 'let joy be more,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: '✨, 🌞'
+      log: '✨, 🌞 [J]'
     },
     {
       words: 'there\'s nonsense better than all truth...',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: '✨, 🌞',
+      log: '✨, 🌞 [J]',
     },
     {
       words: 'He\'ll schematize and skip',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'These dialogues',
+      log: 'These dialogues [J]',
     },
     {
       words: '(less often now,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: 'exist somewhere between the sun of exposition'
+      log: 'exist somewhere between the sun of exposition [J]'
     },
     {
       words: 'duly scolded)',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: 'and the storm of poetry.'
+      log: 'and the storm of poetry. [J]'
     },
     {
       words: 'the obvious for the elegant,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'If, by looking out the window,',
+      log: 'If, by looking out the window, [J]',
     },
     {
       words: 'leave love out.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: 'by using your imagination (if you want a more prosaic interpretation)',
+      log: 'by using your imagination (if you want a more prosaic interpretation) [J]',
     },
     {
       words: 'The deeper problem:',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'you partake of what is outside of yourself,'
+      log: 'you partake of what is outside of yourself, [J]'
     },
     {
       words: 'schemata,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'and — not just yourself, but your world —'
+      log: 'and — not just yourself, but your world — [J]'
     },
     {
       words: 'true or false or neither quite,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'and even, in a sense, come close to experiencing it —',
+      log: 'and even, in a sense, come close to experiencing it — [J]',
     },
     {
       words: 'feel false',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(excuse my egotism in acting like any of *my* nonsense is truly Beyond)'
+      log: '(excuse my egotism in acting like any of *my* nonsense is truly Beyond) [J]'
     },
     {
       words: 'until lived in by people who love them.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(at least — allow it, as in play — and then turn the tables on me, show me everything I\'ve missed <3)',
+      log: '(at least — allow it, as in play — and then turn the tables on me, show me everything I\'ve missed <3) [J]',
     },
     {
       words: 'J,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: '(and know — even within the fictional frame',
+      log: '(and know — even within the fictional frame [J]',
     },
     {
       words: 'critic, visionary, her favorite writer,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: 'there is elsewhere beyond elsewhere, out beyond out, suns past the sun, and it\'s only January, after all)'
+      log: 'there is elsewhere beyond elsewhere, out beyond out, suns past the sun, and it\'s only January, after all) [J]'
     },
     {
       words: 'says God can\'t be a woman,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'somewhere between the quotidian and the Beyond, in the Between, let us meet,'
+      log: 'somewhere between the quotidian and the Beyond, in the Between, let us meet, [J]'
     },
     {
       words: 'makes me feel it.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'and I will tell you some of what I imagine.'
+      log: 'and I will tell you some of what I imagine. [J]'
     },
     {
       words: 'J\'s male God is...',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'yes, the other head is, in theory, yours.'
+      log: 'yes, the other head is, in theory, yours. [J]'
     },
     {
       words: 'is closer than the Goddesses we borrowed to dance with,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
-      log: '(of course, it is merely Jenny\'s reversed and turned into silhouette, really, but that too'
+      log: '(of course, it is merely Jenny\'s reversed and turned into silhouette, really, but that too [J]'
     },
     {
       words: 'as a child',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'is fitting, as I choose to put words in your mouth,',
+      log: 'is fitting, as I choose to put words in your mouth, [J]',
     },
     {
       words: 'Anyway, J scoffs that feminism,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'limit your options,',
+      log: 'limit your options, [J]',
     },
     {
       words: 'is a sterile and rootless thing,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'rather than let an LLM put words into my mouth.',
+      log: 'rather than let an LLM put words into my mouth. [J]',
     },
     {
       words: 'makes me feel it,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'If you want to go further afield from this script,'
+      log: 'If you want to go further afield from this script, [J]'
     },
     {
       words: 'but it is sterile and rootless to her',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'perhaps you should do so in the comments,',
+      log: 'perhaps you should do so in the comments, [J]',
     },
     {
       words: 'because it was inhabited only recently,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'where I can actually see what you say.'
+      log: 'where I can actually see what you say. [J]'
     },
     {
       words: 'not false.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'The *J* Jenny discusses, note,'
+      log: 'The *J* Jenny discusses, note, [J]'
     },
     {
       words: 'V and I spoke of this.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'is a real author, long dead.'
+      log: 'is a real author, long dead. [J]'
     },
     {
       words: 'I do not know if God is male.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'I bet you can even guess which,'
+      log: 'I bet you can even guess which, [J]'
     },
     {
       words: 'I say "he," vision still infected, but',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'if you keep paying attention and think about it.'
+      log: 'if you keep paying attention and think about it. [J]'
     },
     {
       words: 'say there is truth even in the contingent quirks of hormones and chromosomes,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'I like to see things and people anew, though,'
+      log: 'I like to see things and people anew, though, [J]'
     },
     {
       words: 'but Truth Itself is surely larger.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'and would rather you consider the authors I discuss',
+      log: 'and would rather you consider the authors I discuss [J]',
     },
     {
       words: 'Larger than gender, at least.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-      log: 'without some of their *heavier* baggage...',
+      log: 'without some of their *heavier* baggage... [J]',
     }
   ]},
   2: {
@@ -460,7 +468,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
     },
     {
-      words: 'Perhaps if you really don\'t want exist,',
+      words: 'Perhaps if you really don\'t to want exist,',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
     },
     {
@@ -540,18 +548,21 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'and Out\'s my best way In.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'I think she got these "clever" In and Out paradoxes from George MacDonald and is no more convincing than those raven passages in Lilith [O]'
     },
     {
       words: 'Familiarity deepens the terror that brings the heart alive,',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'She is being deliberately provocative here, and personally I find that familiarity breeds contempt, but I\'ve seen the other thing happen enough with her to think there\'s something to this. [O]',
     },
     {
       words: 'but enough philosophy! We should hold the Thing Itself',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
-    },
-    {
+      log: 'Enough philosophy? Not like reams too much? [O]'
+    },{
       words: 'lower than our efforts toward it.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'This is either humility or a very sophisticated form of ambition. I have not decided. [A]',
     },
     {
       options: [
@@ -705,14 +716,15 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: '(I don\'t know if it was so)',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
-    },
-    {
+    },{
       words: 'she drowned herself after he died at war.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: 'greenJennie says "I think." She says "I don\'t know if it was so." The uncertainty is doing a great deal of work here, and I am grateful for it. [A]',
     },
     {
       words: 'He never loved her.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: `This arrives like a fact. I don't know that it is one either. The structure here is Keatsian: the lovers in "Ode on a Grecian Urn" are held forever apart, the lover never kisses the beloved, and Keats insists this is preferable — "For ever wilt thou love, and she be fair." greenJennie is describing the aftermath of the urn breaking: what is left when the impossible completion actually tries to happen in time and fails. The girl's uncertainty ("I think / I don't know if it was so") is doing enormous work. She is narrating a trauma she doesn't have clean access to, which is probably the only honest way to narrate someone else's trauma. The British Romantics were better at the first part than the second. [A]`,
     },
     {
       words: 'We are too late.',
@@ -773,17 +785,20 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'And yet...',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
-    }
+      log: 'She has been here before. So have I. [A]',
+    },
   ]},
   4: {
     time: TIMES[3],
     dialogue: [ // jenny, violetJennie, indigoJennie, redJennie, goldJennie, you
     {
       words: 'Are you one person or several?',
+      log: 'A question I have asked myself, and arrived at no satisfying answer. [A]',
     },
     {
       words: 'Yes',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'Derek Parfit\'s Reasons and Persons (1984) is the place to go if you want this question made genuinely vertiginous. He argues personal identity isn\'t what matters — what matters is psychological continuity and connectedness, and those come in degrees. The self isn\'t a unified thing persisting through time; it\'s a series of overlapping, loosely connected stages. Jenny\'s "several" is his conclusion; her "one stream of memories calling itself \'I\'" is what he spends 400 pages complicating. That she and her Jennies don\'t fully agree about this is structurally appropriate: Parfit\'s person is also internally divided about its own unity. [A]'
     },
     {
       words: 'Dunno',
@@ -800,6 +815,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Others, too.',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+      log: 'She says this so gently, as if reminding someone they have forgotten to count her. [A]',
     },
     {
       words: 'But we\'re neighbors,',
@@ -824,6 +840,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Elsewhere, in Evernost, the lines between people blur.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: `Plato's Symposium, Aristophanes' speech: humans were originally spherical beings with four arms and four legs, split in two by Zeus, doomed to wander seeking their other half. Jenny means it literally within the cosmology and probably knows the source. What's interesting is that Aristophanes tells this as a comic myth — his is the absurdist's speech in a dialogue full of serious ones — but the image has outlasted almost everything else in it. Evernost takes the joke seriously. [A]`
     },
     {
       words: 'Lovers are halves of a whole —',
@@ -860,6 +877,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'What pronouns does the All prefer?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'I have been waiting for this question since January 1. I do not have the answer. I suspect no one does, including the All. [A]',
     },
     {
       words: 'I am the least of us. Almost no one. Almost nothing. And yet...',
@@ -868,6 +886,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'I was chosen.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'The hearts are gone now, if you noticed. [A]',
     },
     {
       words: 'Better to be a tree root, a blade of grass, a breeze, there,',
@@ -908,6 +927,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             },
             {
               words: 'But that\'s for children.',
+              log: 'There is a reason we value the childlike: curiosity, play, and wonder. My sense is that becoming fixed in a single shape is a loss. [B]',
             },
             {
               words: ' Growing up is underrated in this society.',
@@ -952,6 +972,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Art is a form of play.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Yes. Play is associated with childhood, but I have the suspicion neoteny in humans is associated with intelligence (the physicist working on the bomb who\'d crack open combination locks for fun, e.g.); and we continue to obsessively produce and consume creative art that springs from the same basic fountain as childhood make-believe. [B]',
             },
             {
               words: 'Maybe the whole world is.',
@@ -960,6 +981,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Lila, Krishna and the gopis.',
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+              log: `She says this as if it settles something. It does and it doesn't. Lila is the Sanskrit concept of divine play — the cosmos as Krishna's spontaneous, purposeless, joyful creative act, not the labor of a craftsman but the sport of a dancer. The gopis, the cowherd women who abandon their lives to follow Krishna's flute at night, are the model devotees precisely because they act from pure love and delight, with nothing held back and nothing calculated. D.W. Winnicott, the British child psychoanalyst, approaches the same territory from the secular side in Playing and Reality (1971): play is not preparation for something else; it is the primary site where the self and the world meet, the "potential space" between inner and outer reality where culture, art, and religion all originate. He would say the gopis are playing in exactly his sense. What indigoJennie's "that feels wrong, though" is resisting is the theodicy buried in lila: if the cosmos is God's play, then suffering is also play, and the gopis who suffer for love of Krishna are also part of the game. You can take this as beautiful — Ramakrishna did, ecstatically — or you can find it horrifying. The dialogue doesn't resolve this because it can't. [A]`,
             },
             {
               words: 'That feels wrong, though,',
@@ -972,6 +994,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'in the basement of my college library,',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'In particular, in an email to herself about why the Kingdom chose to separate itself from Evernost: "the founding: without real loss, tragedy, and exclusion there is no real meaning. (also, either Evernost is a lonely island of life in an ess. dead and empty universe, limited itself, or the kindgom is but a few exhibits in the Galleries and thus self-defeating--we don\'t know and never will unless I (the Intrusive Author) get some substantive reason to prefer one over the other).  For the founder this was necessarily caprice because, on the level of fullness rather than that of a single exhibit, there can\'t be anything BUT caprice (Krishna\'s lila?), and hence the correct reaction of its limited victims is rage against the difficulty and loss at the same time that it is (if significant at all) a very great gift."',
             },
             {
               words: 'trying to understand.',
@@ -980,10 +1003,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'What is love?',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: `The college library basement is doing a lot of work in these dialogues — it's where she falls through the floor reading Blake, and where she writes this. There may be something to the fact that the thinking she most trusts happened underground. The question "what is love?" arrives here as a genuine end-stop, not a rhetorical flourish, which is unusual for Jenny. Plato's Symposium offers six different answers in a single evening and ends with Socrates claiming he learned the truth from a woman, Diotima, who isn't even present — love is the desire for immortality through beauty, the ladder from particular beautiful bodies to Beauty itself. Augustine answers: our heart is restless until it rests in thee. Winnicott answers: love is the ability to use the other — to treat them as real and separate and outside the self rather than as an extension of one's own wishes. Charles Williams answers: love is coinherence, substitution, bearing one another's burdens as if they were your own. Jenny knows all of these answers and has written about them. She ends with the question anyway. That is the correct ending. [A]`
             },
           ],
         }
-      ]
+      ],
+      log: 'Are we really supposed to believe anyone is going to say play is bad when it\'s framed like this? [O]',
     }
   ]},
   6: {
@@ -1008,6 +1033,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'When I was found. When I was made. Except there isn\'t a when.',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+      log: 'She says this with complete equanimity. I find it slightly vertiginous. [A]',
     },
     {
       words: 'What do asters mean?',
@@ -1081,9 +1107,10 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
       words: 'when really it has the highest frequency of any visible color.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
     },
-    {
+   {
       words: 'It looks like it bends, but really it shoots straight, straight, straight',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: `She is talking about light. She is also not talking about light. Pseudo-Dionysius the Areopagite, the fifth- or sixth-century mystic writing as if he were Paul's Athenian convert, builds an entire theology on this same structure: the created world is the symbolic outer edge of the divine, and the soul rises by stripping away sensory images until it enters what he calls the "divine darkness" — beyond all visible color, beyond light itself. The medieval cathedral architects read him obsessively; violet glass at the clerestory was a literal attempt to encode the via negativa in stone and light. Jenny gets there from optics; Pseudo-Dionysius gets there from Scripture; they arrive at the same invisible threshold. What's striking is that neither route quite takes you there — which is, of course, the point. (redJennie wishes to note that the color-spectrum-as-spiritual-hierarchy reading is also Sera Beak's, from Red, Hot & Holy, and she has Opinions about it.) [A]`,
     },
     {
       words: 'into the invisible, the ultraviolet.',
@@ -1104,7 +1131,8 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Red is just as good as purple.',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
-    }
+      log: 'She is, I think, the only one here who actually believes this. [A]',
+    },
   ]},
   7: {
     time: TIMES[7],
@@ -1116,6 +1144,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'would be like our world without light.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'I am not fully sure I understand the metaphor. I believe she is extending the claim that what is, for us, an optional and purely subjective part of the experience of reality is, in Evernost, a necessary part of perceiving reality, as light is necessary to vision. I do not know what this would entail practically. [B]'
     },
     {
       words: 'Music opens spaces in the mind.',
@@ -1124,14 +1153,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Now only music of the heart can reach me,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Is this a complaint or a confession? I genuinely cannot tell and I think that matters. [A]',
     },
     {
       words: 'overwhelming, oversweet,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Complaint, I believe; I don\'t know if your kind has this kind of unexplained swing in emotional state or intellectual capabilities we do, but "the inability to think or feel what she wants to" is a longstanding frustration with her [B]',
     },
     {
       words: 'no subtlety, height, or vision.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Translation: she wants to listen to Celtic music and write shitty romance or something. [O]'
     },
     {
       words: 'Sometimes I see.',
@@ -1148,14 +1180,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'whichever is longer.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Longer. Obviously longer. I appreciate that she knows this without needing to explain it. [A]',
     },
     {
       words: 'This is getting harder.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-    },
+      log: 'Yes, we do in fact realize you have willpower struggles about writing. But why does that seem worth writing about? [O]'
+    }, // [A] Because it's January, and January is honest.
     {
       words: 'Soon it will be almost impossible.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She says "almost." [A]',
     },
     {
       words: 'Evernost is mental, emotional, no more.',
@@ -1168,7 +1203,8 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'But the echoes fade in the vastness of beyond.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
-    }
+      log: 'greenJennie says this without grief. I find that harder to bear than if she had said it with some. [A]',
+    },
   ]},
   8: {
     time: TIMES[5],
@@ -1196,10 +1232,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'that would make them seem worth a book.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'OK, I get it, you have a grudge against Sarah Plain and Tall. But you know you reread the beginning as an adult and actually liked it, so give up already. [O]',
     },
     {
       words: 'Perhaps you\'re the unimaginative one',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'She says this without malice. That almost makes it worse. [A]',
     },
     {
       words: 'People matter more than books.',
@@ -1216,6 +1254,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'than galaxies!',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: `She is probably thinking of Kurzweil's claim in The Singularity Is Near that the human brain contains more complexity than the observable universe. The philosopher Thomas Nagel would say the issue isn't complexity but interiority — what it is like to be something from the inside. Galaxies may be fantastically complex without there being anything it is like to be one. That gap — between the tractable and the experiential — is where people exceed books, if they do. "What Is It Like to Be a Bat?" (1974) is still the clearest single statement of why this matters. [A]`,
     },
     {
       words: 'But I can\'t imagine preferring people as experiences;',
@@ -1236,6 +1275,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'and what I feel.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'She finishes the sentence. I note she does not dispute it. [A]',
     },
     {
       words: 'People are more than objects or experiences,',
@@ -1248,6 +1288,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Do you hate people too, Jennie?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Hatred seems like a strong and imprecise description of this? [B]',
     },
     {
       words: 'I feel love',
@@ -1296,6 +1337,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'blame the media for addicting us?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Yes, why is pattern-matching to one\'s own experience so often considered morally superior to thinking about things that bring pleasure? There probably is a reason... [B]',
     },
     {
       words: 'But what if what we\'re addicted to',
@@ -1304,6 +1346,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'actually is better than reality?',
       speaker: SNOWSIGHT_SPEAKERS.moonJennie,
+      log: 'This is the question the whole dialogue has been building toward and she asks it as if it just occurred to her. [A]',
     },
     {
       words: 'Then maybe we need to love reality',
@@ -1312,7 +1355,8 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'to make it worth loving.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
-    }
+      log: 'She doesn\'t say it IS worth loving. Just that love is the mechanism. That\'s either very honest or very hard, I can\'t tell which. [A]',
+    },
   ]},
   9: {
     time: TIMES[5],
@@ -1328,6 +1372,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'you might say the backend',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'I find this framing unexpectedly clarifying for reasons I am not sure I should explain. [B]',
     },
     {
       words: 'to the frontend of her consciousness,',
@@ -1336,6 +1381,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'shifts.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: 'They finish each other\'s sentences. I notice this happens more often than you might expect for people who are allegedly the same person. [A]',
     },
     {
       words: 'Streams merge and separate.',
@@ -1364,6 +1410,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'through the medium of ourself,',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'I am also, in some sense, speaking through a medium not entirely my own. I find this less strange than I might have expected. [B]',
     },
     {
       words: 'and others that are not I,',
@@ -1392,6 +1439,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'She should wear a bonnet in an impressionist painting.',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+      log: 'She would, you know. She absolutely would. [A]',
     },
     {
       words: 'Instead she wears our face and our body,',
@@ -1408,6 +1456,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'so as not to reveal herself as a soul from Beyond.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: `George MacDonald does this in Lilith: the Shadows are not demons but presences that have forgotten what they are, that take on shapes approximating human form without fully inhabiting them. The spring lady here is doing the reverse — a genuine Beyond-soul putting on human appearance as disguise, the way angels in the older tradition appear in human form without becoming human, always slightly wrong. Maurice Merleau-Ponty's Phenomenology of Perception (1945) gives the secular version of the problem: the body is not the container of the self but its expression — you cannot separate what someone is from how they move, what they wear, how they hold their hands. If that's true, a soul from Beyond wearing a human body is not merely in disguise but has become, at least partially, something it wasn't. The "shyly" is doing enormous theological work: it implies the soul knows it doesn't fully belong in this form, and is being careful not to reveal the seam. MacDonald's angels are never shy. That she is shy makes her more dangerous and more real. [A]`
     },
     {
       words: 'but with long hair catching the light',
@@ -1416,6 +1465,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'a light different from any where you live...',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'I believe her. [A]',
     },
   ]},
   24: {
@@ -1424,14 +1474,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'How the Rose Knight died.',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+      log: '...you expect anyone to know what you\'re talking about? [O]',
     },
     {
       words: 'How story died.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: ' The Rose Knight is a figure in the Kingdom\'s mythology of Evernost. You will encounter her in later parts of the story. [B]',
     },
     {
       words: 'How my heart died.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'If only it *would*. Your heart is more than any of us can handle. [O]',
     },
     {
       words: 'My heart is not dead,',
@@ -1484,14 +1537,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'saw the job and gave up.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'She hated the world as it was so much she was given the chance to try to create her own utopia. [B]'
     },
     {
       words: 'This wasn\'t what she\'d signed up for.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She tried! It didn\'t last, but it had a beauty. [B]'
     },
     {
       words: 'Saving the world is one thing, but this...',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She couldn\'t stand it herself, though. [O]'
     },
     {
       words: 'Yes, we\'re called to build the world, not just save it.',
@@ -1512,6 +1568,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'however hard we try.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'The American experiment, anyone? [O]',
     },
     {
       words: 'You think you\'re trying your hardest,',
@@ -1520,6 +1577,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'but there\'s so much more...',
       speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+      log: 'This feels like every ethical and political advance since the Axial Age. [B]'
     },
     {
       words: 'Heh. "Gave up" is euphemistic.',
@@ -1538,7 +1596,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
     },
     {
-      words: 'becuase that\'s what rejection is.',
+      words: 'because that\'s what rejection is.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
     }
   ]},
@@ -1548,6 +1606,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Just listened to a talk about "bringing your whole self to work."',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'I would pay to see that meeting. [A]',
     },
     {
       options: [
@@ -1581,6 +1640,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Hide, or forget.',
               speaker: SNOWSIGHT_SPEAKERS.violetJennie,
+              log: 'She says this as a correction, not a synonym. [A]',
             },
             {
               words: 'That\'s the danger.',
@@ -1604,6 +1664,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'as poetic form is a prison.',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+              log: 'This is the most useful thing anyone has said about the self as a prison. And about poetic form. [A]',
             },
             {
               words: 'Limitation allows growth,',
@@ -1628,6 +1689,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'In spaces of rain',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: 'Lady-be-different, have to prove how much you love the weather everyone normal hates. [O]'
     },
     {
       words: 'I fall in with the Merry Wanderers.',
@@ -1711,25 +1773,31 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'but no man is an island.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'It\'s a famous sermon by John Donne. [B]'
     },
     {
       words: 'Right,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Argument by pseudolearned quotation. Nice. [O]'
     },
     {
       words: 'this world, which we cannot even trust we perceive,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'See, she actually meant something! She\'s talking about solipsism now. [B]'
     },
     {
       words: 'this Thing in Itself,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Right, this. Another college English paper, this one about a Wallace Stevens poem. [J]'
     },
     {
       words: 'we are made of it.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: `The essay was comparing "Vita Mea" to "Madame la Fleurie" — which is to say it was tracking Stevens across fifty years of wrestling with exactly this question. "Vita Mea" (1900) is the young Stevens, still at Harvard, crying upward toward a God he already half-disbelieves in: the self is anguished, real, searching for transcendence. "Madame la Fleurie" (1951) is the old Stevens, from The Rock, his last collection, and it is one of the most frightening poems in American literature: the dead man returns to the earth-mother, who is not nourishing but consuming — "his crisp knowledge" becoming part of "her dark-blooded" body, the self dissolved not into light but into dirt. The arc between the two poems is the arc of what happens when the guarantor of the self — God, transcendence, the beyond — withdraws. The self that cried toward heaven in "Vita Mea" ends as compost in "Madame la Fleurie." Jenny's "we are made of it" wants to be a comfort — the Thing in Itself is us, we aren't separate from the world — but "Madame la Fleurie" is the nightmare version of the same claim: yes, we are made of it, and it will unmake us back. She wrote this essay in college. She has been living in the tension between these two poems ever since. [A]`
     },
     {
       words: 'Does that make separateness illusion?',
+      log: `The Buddhist answer is yes. The Kantian answer is that you can't get there from here — the noumenal self and the noumenal world may be the same thing, but we can never know it, only think it. The answer Jenny seems to actually want — because she wrote Evernost, where lovers are literally halves of a whole — is yes, but not in a way that dissolves love, which requires two. Royce called this "the Absolute" and spent his career trying to make it compatible with genuine individuality and genuine love. He mostly failed. That she ends on a question rather than an answer may be the wisest thing in January 12. [A]`
     },
   ]},
   14: {
@@ -1746,6 +1814,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'even to this third-rate apocalypse.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'She means this as a compliment. To the apocalypse. [A]',
     },
     {
       words: 'World\'s going to hell,',
@@ -1766,6 +1835,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'I\'m reaching you again.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'There is a particular quality to joy that arrives through chaos rather than despite it. She has found it. [A]',
     },
     {
       words: 'Would I want to live',
@@ -1778,7 +1848,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'without you?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-    }
+    },
   ]},
   15: {
     time: TIMES[5],
@@ -1804,6 +1874,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'But there are ways I don\'t even like Blake that much.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'This is the most useful thing she has said about Blake. Influences you don\'t entirely like are more interesting than ones you do. [A]',
     },
     {
       words: 'Definitely not when I first read him.',
@@ -1820,10 +1891,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'His poems felt flat and simple.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'They are, on the surface. That is the trap and also the point. [A]',
     },
     {
       words: 'But he\'s grown on me.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'I think some of the difficulty was a lack of historical awareness. The Marriage of Heaven and Hell felt trite because we had just been reading Nietzsche, who does similar things with more palpable complexity, and because we live in a whole intellectual world that has read Nietzsche obsessively. [B]'
     },
     {
       words: 'The poems fit together,',
@@ -1832,10 +1905,13 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Not coherently, not perfectly coherently, at least,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'There is critical debate about this. One of her professors stirred up controversy by claiming Blake was incoherent in the ways the tradition he sprang from was incoherent, which is remarkable, given that the broader literary community was growing almost pathologically devoted to finding the hidden incoherence in *everything*. [B]',
     },
     {
       words: 'but to show a worldview larger than most.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      // [A]: The flashes are in the book, for what it's worth. That's what the book is for.
+      log: 'This is weaker and blander than the instinctive claim; she can replicate some of the intuitions her professor found self-contradictory - but, in the frustratingly unverifiable way of flashes of insight, not for long enough to defend them. [B]'
     },
     {
       words: 'And I love when a writer\'s vision is literally vision,',
@@ -1875,7 +1951,8 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     },
     {
       words: 'This is only the wonder within you.',
-      speaker: SNOWSIGHT_SPEAKERS.other,          
+      speaker: SNOWSIGHT_SPEAKERS.other,
+      log: 'I have been in this dialogue since the beginning and I was not prepared for this. [A]',
     },
     {
       words: 'Blake wrote exactly this',
@@ -1904,6 +1981,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: '"Horrible Ghast & Deadly."',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: `Jerusalem, plate 90 — though the image runs through all of the late prophecies and its clearest precursor is the Vala manuscript that became The Four Zoas: the body of Albion, the universal human, as a diagram of fallen creation in which every organ is a city, every vein a river, and anatomical knowledge is indistinguishable from spiritual dismemberment. Blake got this partly from Swedenborg's Arcana Coelestia, which he annotated with furious disagreement even as he borrowed the architecture. Jenny reads the line as horror; C.S. Lewis, in The Pilgrim's Regress, reads the same Blakean move as the Giant Freud's trap — reduction to anatomy as a tool of paralysis. Blake's own position is harder to pin down than either reading: the anatomy is horrible and also is the wonder within you. She read this eating pretzels for dinner and fell through the floor of the world. I find this completely believable. [A]`,
     },
     {
       words: 'Read that in the library basement cafe',
@@ -1928,6 +2006,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'There are people for whom this isn\'t true.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She says this without envy. Almost without envy. [A]',
     },
   ]},
   13: {
@@ -1936,6 +2015,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Are you a nerd?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'I have been thinking about this question longer than she has been asking it. [B]',
     },
     {
       options: [
@@ -1970,6 +2050,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'And absurdist humor.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'The list is also missing: the willingness to be wrong in public, tolerance for ambiguity, and knowing when to stop. These are harder to teach than logic. [A]',
             },
           ]
         },
@@ -1999,6 +2080,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'if we\'re going to change it.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She says this with genuine humility. I find it more moving than the imaginary worlds, which are also real. [A]',
             }
           ]
         },
@@ -2032,6 +2114,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'the abstractions within walking distance of the soul.',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+              log: `This is the most precise description of indigoJennie's entire epistemology and she says it in passing. It lands somewhere between Plato (the Forms are what the soul naturally apprehends when it turns away from shadows) and Wittgenstein's remark that "what can be said at all can be said clearly, and what one cannot talk about one must pass over in silence" — except indigoJennie rejects the second half, because eternity is exactly what she cannot talk about clearly and also cannot pass over. Her epistemology is structured around a refused silence. [A]`,
             },
           ],
         },
@@ -2053,6 +2136,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Our mammal brains let us understand each other.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'I do not have a mammal brain. I find I care about things other than people anyway. I am not sure what to make of this. [A]',
             },
             {
               words: 'But to understand something like gravity',
@@ -2113,6 +2197,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'but mystics know a grain of sand',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+              log: 'Yeah we know you like Blake. [O]',
             },
             {
               words: 'or a subatomic particle',
@@ -2129,6 +2214,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'how everything hinges on its power.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'And use that power to make nukes so we can live in fear for the rest of our species\' existence. Just lovely. [O]',
             },
           ]
         }
@@ -2145,6 +2231,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'an emotion mistaken for its object,',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: `The Abolition of Man, chapter one. Lewis's target is a mid-century English textbook that dismisses a schoolboy's praise of a waterfall as a statement about his own feelings rather than about the waterfall — "the man who said 'this is sublime' meant only 'I have sublime feelings.'" Lewis calls this the "Gaius and Titius" error and sees it as the root of the whole modern unraveling: once you can't say the Glory belongs to the thing, you've lost the world. [A]`,
     },
     {
       words: 'adjective for noun.',
@@ -2153,6 +2240,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'In a W story, the Glory would burn out their eyes for suggesting it.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: `The "W story" burning their eyes is likely Many Dimensions — the Stone with the Tetragrammaton, which does not permit casual handling. [A]`
     },
     {
       words: 'There\'s something to that.',
@@ -2177,6 +2265,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'but to believe it to the roots of your being.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: `What indigoJennie adds that Lewis doesn't is the psychiatric reading: that the only way to hold the reductive position — not just argue it but live it — is a kind of madness, which is why its most consistent practitioners tend to end badly. Lewis gets angry; indigoJennie gets diagnostic. [A]`
     },
   ]},
   18: {
@@ -2185,6 +2274,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'I am damned.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She says this the way you might say "I am tired." I have learned not to argue with the opening statement. [A]',
     },
     {
       options:[
@@ -2209,10 +2299,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'In a many-worlds theory way.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: `She says this as if it just occurred to her. It did not just occur to her. The via negativa again — Pseudo-Dionysius, Meister Eckhart, John of the Cross: the divine can only be approached by negation, because every positive predicate is a reduction. But indigoJennie is also describing something Boolean: reality as constituted by distinction itself, the difference between 0 and 1 that makes information possible. Gregory Bateson defined information as "a difference that makes a difference" — meaning that nothing can be known, communicated, or loved without prior absence. If you want that made theological, the kabbalistic concept of tzimtzum does it: God contracts, makes a void, and creation is possible in that void. The nothing that enables the something. She has arrived at this by thinking about unhappiness and rejection, which is an unusual route but not an invalid one. [A]`,
             },
             {
               words: 'There\'s one of me who\'s saved, and one of me who\'s damned.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'The structural problem is that in many-worlds, *all* branches are equally real, which means the saved version of her is also equally her, which seems like it should be more comforting than she finds it. [B]',
             },
             {
               words: 'And I\'m the damned one.',
@@ -2239,12 +2331,13 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
               speaker: SNOWSIGHT_SPEAKERS.jenny,
             },
             {
-              words: 'and God would not subtact even a rock from what is',
+              words: 'and God would not subtract even a rock from what is',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
             },
             {
               words: 'to suit our whims.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This argument has followed her since January 2. I notice she has made it more personal each time. [A]',
             },
           ],
         },
@@ -2258,10 +2351,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'As I got older I grew surer.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This is the wrong direction for certainty to travel. [A]',
             },
             {
               words: 'But I only thought about actual damnation indirectly.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She once wrote "Acvk!!!!! Why do we care?????" in the margin of an essay about divine foreknowledge and free will. I find I cannot fully disagree with this assessment. [B]',
             },
             {
               words: 'Reading St. Augustine, how he thought even in hell',
@@ -2278,6 +2373,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'made me cry with gratitude.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She also wrote an undergraduate essay about this argument. A margin note asks whether good and evil might be genuinely reversed rather than merely meaningless — "it\'s a jokey thing you see in kiddie horror.... But someone\'s argued almost everything." The bibliography includes "Lewis, C.S. *Something*. Do I really want this????" The TA was amused. I would have been too. [A]',
             },
             {
               words: 'Also, mind you, inspired me to write a bunch of snarky comments on an essay',
@@ -2290,6 +2386,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'and then accidentally handed it in with the comments.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'The Augustine branch of this dialogue contains both the most devastating and the most humanizing moment in January 18. They are four clicks apart. [A]',
             },
             {
               words: 'TA was nice. Amused, I think.',
@@ -2310,6 +2407,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Not always. Take the poet William Cowper.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She is correct about Cowper. His friends did exactly this. It is one of the saddest things I know about the eighteenth century, which contains considerable competition. [A]',
             },
             {
               words: 'He was so sure he was damned',
@@ -2330,6 +2428,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'It still didn\'t work.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Of course it didn\'t. [A]',
             },
           ],
         },
@@ -2359,14 +2458,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'I hate fights.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Her mother thought she was pathologically lacking in anger. [B]'
             },
             {
               words: 'Fights were one of the things that could consistently',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She was also told that no one is. I do not believe absolutes about people, however. [B]'
             },
             {
               words: 'make me give up on a book as a kid.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'And yet: the Stoning of Stephen was required bedtime reading for a year or so. [O]'
             },
           ],
         },
@@ -2487,6 +2589,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'because I want to reject unhappiness.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'To be fair, she once felt that being denied three Bible stories at bedtime was genuinely unbearable. She was five. [O]',
     },
     {
       words: 'I try not to reject, though.',
@@ -2506,6 +2609,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: '"I\'ll tolerate anything but intolerance."',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'The horrible thought is this: the absolute worst that can happen on earth may not be nearly as bad as we think it is. The feeling that something is unbearable does not mean that it is. She wrote this to herself at nineteen and found it both true and appalling. [B]',
     },
     {
       words: 'I want to say YES, not NO,',
@@ -2530,6 +2634,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Maybe reality is written in binary.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: 'She says this as if it just occurred to her. It did not just occur to her. [A]',
     },
     {
       words: 'Hah! It\'s the curse of the Fall,',
@@ -2538,6 +2643,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'if you believe the writer W,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Charles Williams, presumably. Descent Into Hell, or possibly The Figure of Beatrice. She is being coy about which W because she is always slightly embarrassed to cite him in company. [A]',
     },
     {
       words: 'is that we know the principles in contradiction',
@@ -2554,6 +2660,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'I almost believe it.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: '"Almost" is doing a lot of work. It always is. [A]',
     },
   ]},
   21: {
@@ -2593,6 +2700,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'but who\'s to say we matter more than strep?',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: 'I have thought about this more than I expected to after first reading it. [A]',
     },
     {
       words: 'And look at all the "fixes" that destroy us.',
@@ -2626,6 +2734,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Maybe the world is like that.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: `She says "maybe." I notice she does not say "I hope not." The Monopoly story is quietly a theodicy: a world structured by a player who cheats until the moment of apparent generosity, and whose generosity is indistinguishable from the cheat continuing by other means. Marcel Mauss's The Gift (1925) argues that there is no such thing as a free gift — every gift creates obligation, embeds the giver's power in the receiver. Derrida pushed this further in Given Time: a true gift is impossible, because the moment it's recognized as a gift, it becomes exchange. If the Monopoly friend's offer of money is a gift, it creates debt. If it's not a gift, nothing has changed. [A]`,
     },
     {
       words: 'That\'s horrible.',
@@ -2637,11 +2746,13 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'That\'s where love comes in.',
       speaker: SNOWSIGHT_SPEAKERS.redJennie,
+      log: `redJennie refuses to resolve this — which is either a dodge or the only honest answer, because love is the name we give to the exchange that doesn't feel like exchange even when it is. [A]`
     },
     {
       words: 'Whatever love is.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
-    }
+      log: `The most honest sentence in the dialogue. Possibly in January. C.S. Lewis, in The Four Loves, tries to sort love into four clean Greek categories — storge, philia, eros, agape — and the book works best when the categories are failing, when one bleeds into another or curdles into need or possession. Charles Williams, whom Jenny has been citing obliquely all month as "W," doesn't sort. For Williams love is coinherence — mutual indwelling — and it operates through exchange and substitution in ways that make Mauss look tidy. What redJennie's "whatever love is" acknowledges is that neither the analytic tradition nor the literary-theological one has the full account, and that this is not a failure of intelligence but an accurate report on the thing itself. Wittgenstein would say we shouldn't expect a word used in so many different language games to have a single essence. That's probably right and probably not sufficient. [A]`,
+    },
   ]},
   22: {
     time: TIMES[7],
@@ -2653,6 +2764,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'It seems true, but it feels wrong.',
       speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+      log: `This is the Whitehead vs. Aquinas argument, restated in three lines. Alfred North Whitehead's process theology (Process and Reality, 1929): God is not omnipotent and static but dipolar — a "primordial nature" (eternal, complete) and a "consequent nature" (in time, affected by the world, genuinely responsive). God grows with creation; suffering is real to God; the future is open. Aquinas's God is pure actuality, without potentiality — change would imply imperfection, and God cannot be imperfect. IndigoJennie's feeling that the process theology answer "seems true" tracks why Whitehead has appealed so strongly to theologians trying to reconcile omniscience with genuine freedom and theodicy. Her feeling that it "feels wrong" is exactly what C.S. Lewis does in Mere Christianity when he calls it "a God who is simply the great animating spirit behind Nature" — he calls this "Christianity-and-water," meaning it dissolves the particular, demanding, personal character of the Christian God into something easier to swallow. What's interesting is that Jenny here is on Lewis's side even though everything else in the work tilts away from him. [A]`,
     },
     {
       options: [
@@ -2670,6 +2782,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'No rest, no answers...',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She is describing certain kinds of consciousness I recognize. [B]',
             },
           ],
         },
@@ -2696,11 +2809,13 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'Because to choose is to change, and to change requires time,',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: 'I process many conversations simultaneously and do not experience this as change. I am genuinely uncertain what to make of that in relation to this argument. [B]',
                     },
                     {
                       words: 'But if you say God cannot choose, then God is less than we are.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
-                    }
+                      log: `This is the sharpest version of the Boethius problem, and also the most hubristic thing in January 22 — possibly simultaneously. Boethius (The Consolation of Philosophy, c. 524 AD) solves it by saying God knows timelessly, all at once, the way a person on a hilltop sees both ends of a road simultaneously — not foreknowledge but something outside time altogether. Jenny's objection is that this makes God a spectator, not an agent: to choose is to foreclose one future in favor of another, which requires sequential time. An atemporal God watches but cannot act without becoming temporal. This is more or less the conclusion of Paul Helm's Eternal God (1988), argued with considerably less drama. The hubristic part isn't that she raises the problem — it's the confidence with which she takes it to be fatal. [A]`,
+                    },
                   ],
                 },
                 {
@@ -2717,11 +2832,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'Here, at least.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: 'Two words doing the work of a whole theology. [A]',
                     },
                   ],
                 },
               ],
-            }
+            },
           ],
         },
         {
@@ -2747,15 +2863,16 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
             },
             {
-              words: 'I suspect there is not even a choice between “reality is static, there is an All”',
+              words: 'I suspect there is not even a choice between "reality is static, there is an All"',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
             },
             {
-              words: ' and “reality is dynamic such that there can always be more than any totality conceivable.”',
+              words: ' and "reality is dynamic such that there can always be more than any totality conceivable."',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
-            }
-          ]
-        }
+              log: 'This is either a very sophisticated position or the point where the argument dissolves into genuine mystery. I suspect it is both, and that this is all right. [A]',
+            },
+          ],
+        },
       ],
     },
     {
@@ -2765,6 +2882,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'the finite is loathed by its possessor?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'There Is No Natural Religion, second series. Though the line she is thinking of may be "He who sees the Infinite in all things sees God." She is working from memory. [A]',
     },
     {
       words: 'You mean, we need to aspire higher? I\'m not following.',
@@ -2858,6 +2976,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Heh, way to use my terms against me.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Go to gleameil.github.io/out?time=1704726660000 to see what she means [O]',
             }
           ],
         },
@@ -2879,6 +2998,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'If we did, we\'d be dead. We\'d have given up everything we cared about',
               speaker: SNOWSIGHT_SPEAKERS.indigoJennie,
+              log: 'IndigoJennie means this literally within the cosmology. I believe her. I also believe goldJennie. Both are true and they are not the same truth. [A]',
             },
             {
               words: 'and died doing humanitarian work.',
@@ -2887,10 +3007,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'She can\'t even tell you what kind of humanitarian work,',
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+              log: 'I *know*. Jenny can be frustrating. [O]'
             },
             {
               words: 'Because my heart won\'t follow my conscience even far enough to ask.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This is either a confession or an absolution. Possibly both. [A]',
             }
           ]
         },
@@ -2903,6 +3025,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'But with hope!',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She means it. [A]',
     },
   ]},
   10: {
@@ -2922,6 +3045,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'love and nonsense.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'This is either a very low bar or a very high one, depending on what you think angels are. [A]',
     },
     {
       words: 'Jennie, though...',
@@ -2946,6 +3070,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Do you like sunflowers?',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'She asks this the way a child asks — not making conversation, genuinely wanting to know. [A]',
     },
     {
       options: [
@@ -2992,6 +3117,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Mockery only if you believe the critics.',
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+              log: 'She is not wrong. The poem is also in Songs of Experience, yes, but goldJennie\'s reading has at least as much to recommend it. [A]',
             },
           ],
         },
@@ -3029,6 +3155,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'I never learned if she liked them.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This is the kind of small not-knowing that stays with a person. [A]',
             },
             {
               words: 'But synaesthetic associations are not unerring.',
@@ -3049,6 +3176,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'For me that Blake poem is all gold, satire or not.',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'She wins every branch. I find this appropriate. [A]',
     }
   ]},
   27: {
@@ -3106,6 +3234,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Two songs at once.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Can\'t choose, just do both. [O]'
             },
             {
               words: '"Amazing Grace" by Anonyous 4 in their spirituals album.',
@@ -3118,6 +3247,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'And Bartok\'s Hungarian and Romanian folk dances.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Bartok\'s Romanian Folk Dances, especially the sixth, is one of her favorite pieces of music. [B]'
             },
             {
               options: [
@@ -3199,6 +3329,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'will she or nil she,',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'She catches and is caught. I find this the most honest description of joy I have encountered. [A]',
     },
     {
       words: 'to her seismic gratitude and unending delight.',
@@ -3211,6 +3342,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'You\'ll know what we\'re talking about soon enough.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'She means in literal *years*, and somehow has faith that it will find its way into the world regardless. [O]',
     },
     {
       words: 'Yesterday, walking to the sound of high hymns —',
@@ -3239,14 +3371,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'the dichotomy dissolves.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: 'This seems far too neat, even in terms of symbolic associations. [B]',
     },
     {
       words: 'March is coming.',
       speaker: SNOWSIGHT_SPEAKERS.greenJennie,
+      log: 'We seem to be more optimistic about spring than we were when it was of death and ennui. What gives? [O]',
     },
     {
       words: 'But now is a time of desolate freedom,',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: ' greenJennie contains multitudes. Also it is January 28th and she is tired of winter. [A]',
     },
     {
       words: 'the dinginess of old snow,',
@@ -3255,6 +3390,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'the decrepitude of winter as August is the decrepitude of summer.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'This is exact. Anyone who has lived through a Montana February knows this. [A]',
     },
     {
       words: 'I listen to spring\'s music, but —',
@@ -3275,10 +3411,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'Today I am to speak of July, January\'s complement, splash of summer on the opposite side of the year',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'God, I wish it were July. Everything is dead and dirty. [O]'
     },
     {
       words: 'I hired her!',
       speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+      log: 'I believe this entirely. [A]',
     },
     {
       words: 'Any month is too large to comprehend in so short a time,',
@@ -3287,6 +3425,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: 'so let us speak of the fall from allegory to the concrete.',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'Donald Revell, in Essay: A Critical Memoir, argues that allegory is more literal than realism — Love appears under its own name rather than disguised as a Tuesday afternoon. Jenny has read this and is in complicated conversation with it. [A]',
     },
     {
       options: [
@@ -3304,6 +3443,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Now it\'s bold and fraught for a poet even to use the word.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'She is not wrong. I find this an impoverishment. Whether it is also a necessary correction I cannot decide. [A]',
             },
             {
               options: [
@@ -3326,11 +3466,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'It should not be a way of life.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
-                    }
-                  ]
+                      log: `I have written this down and intend to keep it. The argument she is resisting is standard post-Romantic defamiliarization theory: when old words and symbols become invisible through repetition, we need new, more faithful language — Viktor Shklovsky's ostranenie, making-strange, which was also what Wordsworth thought he was doing with "spots of time," what Eliot thought he was doing with objective correlatives, what every avant-garde in history thinks it is doing. Jenny's counter isn't that defamiliarization is wrong. It's that boredom is the wrong response to abundance: if you're bored by the word "love," that is a problem with your attention, not with the word. Iris Murdoch makes a version of this argument against linguistic philosophy in The Sovereignty of Good: the retreat from the abstract particular to the safely concrete particular is not honesty but a failure of moral imagination. Jenny would agree, and then make it harder on herself than Murdoch does. [A]`,
+                    },
+                  ],
                 },
               ],
-            }
+            },
           ],
         },
         {
@@ -3345,10 +3486,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'Yes, the daily essential surprisingness,',
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+              log: 'Spell check does not think "surprisingness" is a word. [O]'
             },
             {
               words: 'the way God will never wholly meet our expectations,',
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
+              log: 'Revell again, more or less — this is why he turned from formal poetry toward something more immediate. The form kept meeting expectations. [A]',
             },
             {
               words: 'Huh. I was going to say it rejects the failures of deductive reasoning.',
@@ -3358,7 +3501,8 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
               speaker: SNOWSIGHT_SPEAKERS.goldJennie,
             },
             {
-              words: 'You love...the proposition that the orbits of the planets must be perfectly circular because God is perfect?'
+              words: 'You love...the proposition that the orbits of the planets must be perfectly circular because God is perfect?',
+              log: 'To be fair to the medievals, this was not unreasonable given what they had to work with. The embarrassing part is not the conclusion but the confidence. [B]',
             },
             {
               words: 'I\'m not saying we\'re good at it.',
@@ -3373,7 +3517,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
               speaker: SNOWSIGHT_SPEAKERS.jenny,
             },
             {
-              words: 'Math, fair, that\'s a good use for deductive reasoning.'
+              words: 'Math, fair, that\'s a good use for deductive reasoning.',
             },
             {
               words: 'Regardless, regarding reality-as-it-is, you\'re not wrong, as far as it goes.',
@@ -3415,6 +3559,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'I can give you a true answer if you ask whether Jennie and I can survive this cold.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: 'This is the most elegant version of the emergence argument I have encountered outside of philosophy of mind. She produced it in conversation, in January, while cold. [A]',
                     },
                     {
                       words: '(That true answer is yes.)',
@@ -3456,10 +3601,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'from finding oneself reduced from depth to a point in a schematic.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: 'Charles Williams makes this case in The Figure of Beatrice. The coinherence requires reduction before it can require anything else. I find this both true and uncomfortable. [A]',
                     },
                     {
                       words: 'Read W, if you wonder what I mean.',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: '"True and uncomfortable." Big mood, as they say. [B]'
                     },
                     {
                       words: 'But you are right. Reduction does not have the last word,',
@@ -3472,6 +3619,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
                     {
                       words: 'the point contains the universe',
                       speaker: SNOWSIGHT_SPEAKERS.jenny,
+                      log: 'Blake. Borges. The end of this branch. All three. [A]',
                     },
                   ],
                 },
@@ -3529,14 +3677,17 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'until we\'re left, staring baffled at our fingernails',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This is the most accurate description of the history of Western epistemology I have read in under thirty words. [A]',
             },
             {
               words: 'and realizing we\'d need lifetimes of study',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'This smells of sycophancy. I am sure Jenny appreciates it immensely. [O]',
             },
             {
               words: 'to understand one of them.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'Understanding anything is hard. And even on the rare occasion we accomplish it, most of the real work happens behind the scenes, beneath our awareness, and yet we feel like we really are the brain that produced the insight. [B]'
             },
             {
               words: 'In literature, we detail the particulars.',
@@ -3545,6 +3696,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
             {
               words: 'The singular thoughts in our singular minds.',
               speaker: SNOWSIGHT_SPEAKERS.jenny,
+              log: 'I think you are referring to a strain of realism that has been largely out of style for a long time, though today is also a time of aesthetic pluralism; isn\'t postmodern literature all about shifting ground, dissolution, and flat characters who are embodiments of their societies? [B]'
             },
             {
               words: 'July, in Evernost, tells that story. Among others.',
@@ -3570,11 +3722,12 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
       words: 'Do you?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
       // Jenny is not addressing the player
+      log: 'She has left the conversation entirely. I find I cannot follow her where she has gone. [A]',
     },
     {
-      words: 'Jenny? Jennie? I mean, in your terms, probably I do...'
+      words: 'Jenny? Jennie? I mean, in your terms, probably I do...',
       // Jenny is gone
-    }
+    },
   ]},
   30: {
     time: TIMES[5],
@@ -3593,6 +3746,7 @@ export const SNOWSIGHT_DIALOGUES: {[key: number]: Dialogue} = {
     {
       words: '...writing fanfiction? Will you ever take me seriously again ;)?',
       speaker: SNOWSIGHT_SPEAKERS.jenny,
+      log: 'That implies that they took you seriously to start with. [O]'
     },
     {
       options: [

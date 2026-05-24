@@ -1248,8 +1248,8 @@ export const JANUARY_SCHEDULE: Day[] = [
     weeHours: { // Tree of life explorations
       hours: 0,
       minutes: 0,
-      weather: 'clear',
-      prediction: 'Clear.',
+      weather: 'cloudy',
+      prediction: 'Cloudy.',
       temperature: 21,
     },
     dawn: { // firebird painting

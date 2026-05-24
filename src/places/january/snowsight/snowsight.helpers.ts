@@ -1,10 +1,10 @@
-import { ImageURLSrc } from "../../../shared/constants";
+import { FONTS, ImageURLSrc } from "../../../shared/constants";
 import { JANUARY_COLORS } from "../../../shared/color";
 import { removeByClassName } from "../../../shared/helpers";
 import { Time } from "../../../shared/time/time.januaryConstants";
 import { getTime } from "../../../shared/time/time";
 import { backgroundForTime } from "../january.helpers";
-import { Dialogue, Option, Options, SNOWSIGHT_DIALOGUES, SNOWSIGHT_LOG_COLORS, SNOWSIGHT_SPEAKERS, Speaker, Statement } from "./snowsight.constants";
+import { Dialogue, Option, Options, SNOWSIGHT_DIALOGUES, SNOWSIGHT_LOG_COLORS, SNOWSIGHT_LOG_FONTS, SNOWSIGHT_SPEAKERS, Speaker, Statement } from "./snowsight.constants";
 
 function turnRedBlack(image: HTMLImageElement) {
   image.style.filter = 'brightness(0%)';
@@ -98,16 +98,17 @@ function printLog(log: string): void {
   const tag = tagMatch[1];
   const body = log.slice(0, log.length - tagMatch[0].length);
 
-  const authorMap: Record<string, { label: string; color: string }> = {
-    A: { label: '~ Amanuensis', color: SNOWSIGHT_LOG_COLORS.amanuensis },
-    O: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.orangeJennie },
-    B: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.blueJennie },
+  const authorMap: Record<string, { label: string; color: string, fontFamily: string }> = {
+    A: { label: '~ Amanuensis', color: SNOWSIGHT_LOG_COLORS.amanuensis, fontFamily: SNOWSIGHT_LOG_FONTS.amanuensis },
+    O: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.orangeJennie, fontFamily: SNOWSIGHT_LOG_FONTS.orangeJennie },
+    B: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.blueJennie, fontFamily: SNOWSIGHT_LOG_FONTS.blueJennie },
+    J: { label: '~ Jenny', color: SNOWSIGHT_LOG_COLORS.jenny, fontFamily: SNOWSIGHT_LOG_FONTS.jenny }
   };
 
-  const { label, color } = authorMap[tag];
+  const { label, color, fontFamily } = authorMap[tag];
   console.log(
     `${body} %c${label}`,
-    `color: ${color}; font-style: italic;`
+    `color: ${color}; font-family: ${fontFamily};`
   );
 }
 
