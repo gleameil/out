@@ -2046,7 +2046,7 @@ const ALIENS: TextEntry[] = [
     format: 'paragraph',
     paragraph: 8,
   },
-]; // maybe something more interesting???
+];
 const DRAFT_EMMA_DAWN: TextEntry[] = [
   
   {
@@ -2939,6 +2939,7 @@ const THEORY_TRUTH: TextEntry[] = [
     words: `and would (one hoped) outlast it.`,
     format: 'paragraph',
     paragraph: 5,
+    log: `D is Diana Wynne Jones (1934–2011) — British fantasy novelist, author of Howl's Moving Castle, the Chrestomanci series, Fire and Hemlock, and some two dozen other works of fierce, strange, formally inventive fiction. The obfuscation here is light: her palette (gray-green heather, mountain rocks, subterranean springs) is accurately her own, and the three essay ideas Jennie sketches — the Blake comparison, the defense of happy endings, the problem of truth — are real critical territory. Jones wrote deeply melancholy work and stood up for happy endings anyway. She was strange on truth in exactly the way described: accepting and not accepting, finding joy in the instability rather than distress. The Amanuensis notes that Jennie's essay on D ran to five thousand words and could not be finished, which is the correct response to a writer this large. Some books refuse to be contained by criticism, and the right reaction is to put down the pen and go make something. — the Amanuensis`
   },
 ];
 const THEORY_D: TextEntry[] = [
@@ -3298,6 +3299,10 @@ const ALLEGORY_DAWN: TextEntry[] = [
     words: `Jennie would write allegory, this second book persuaded her (by its wrongness, perhaps by its beauty).`,
     format: 'paragraph',
     paragraph: 5,
+    // Allegory log — attach to final element of ALLEGORY_DAWN
+    log: `J's allegory study is C.S. Lewis's The Allegory of Love (1936) — a scholarly work on the allegorical tradition in medieval and Renaissance poetry, renowned in its field, and in Jennie's assessment strained and confused compared to Lewis's other writing, for all that its sharp-edged definitions proved useful. The second, madder study is Angus Fletcher's Allegory: The Theory of a Symbolic Mode (1964) — a work of genuine brilliance and genuine irrationality, dense with etymological leaps and structural arguments that convince by their own strange momentum rather than by conventional logic. Fletcher reduces beauty to power, which is the correct description of what he does and Jennie's correct reason for despising it.
+
+What Jennie takes from this encounter is not what either book intended to teach: the wrongness of Fletcher, its nightmare surrealism, its hell-logic beauty, persuades her to write allegory. This is the right lesson and the wrong path to it, which is how a lot of the best creative decisions get made. — the Amanuensis`
   }, 
 ];
 const ALLEGORY_SUNRISE: TextEntry[] = [
@@ -3495,6 +3500,10 @@ const OUTSIDER_AFTERNOON: TextEntry[] = [
   {
     words: `Looking at pictures took her into August.`,
     format: 'paragraph',
+    // Outsider art log — attach to final element of OUTSIDER_AFTERNOON
+    log: `The four artists named are genuine figures in outsider art — work made outside mainstream art institutions, often by self-taught artists working in isolation or confinement. Martín Ramírez (1895–1963), a Mexican immigrant institutionalized in California, made intricate tunnel-and-figure drawings on whatever paper he could find. Madge Gill (1882–1961), a British spiritualist, produced vast obsessive ink drawings she attributed to a guiding spirit. Adolf Wölfli (1864–1930), confined to a Swiss asylum, created an elaborate autobiographical cosmology in thousands of pages of text and image. Henry Darger (1892–1973), a Chicago hospital janitor, left behind a fifteen-thousand-page illustrated novel discovered only after his death.
+
+Jennie wants to see her kin there, and the want is complicated: these are artists whose isolation was not chosen, whose institutions were often brutal, whose work survived by accident. The "forbidden thrill" names the complication honestly. What she takes from them is permission — to make technically imperfect art, to work outside the credentialing systems, to let the work be large and strange and not yet finished. "Looking at pictures took her into August" is the sentence that earns its place: the leap from January's library to August's heat and rage, with no transition, because the pictures were already August. — the Amanuensis`,
   },
 ];
 const AUGUST_SUNSET: TextEntry[] = [
@@ -4602,6 +4611,9 @@ const POETRY_TRANSLATION: TextEntry[] = [
     words: `Was there a difference?`,
     format: 'paragraph',
     paragraph: 9,
+    log: `The poet is Marina Tsvetaeva (1892–1941) — Russian lyric poet, one of the major voices of the Silver Age, beloved by her countryfolk across a century as the passage accurately predicts. The portrait here is not invented: the dark hair and fierceness, the hot reds, the desert soul, the many lovers, the devotion to art above all else, the sudden travel, the daughters — one of whom, Irina, died of starvation in an orphanage where Tsvetaeva had placed her during the famine of 1919-1920, a decision that haunted her surviving writing. The long poem Jennie is translating is most likely one of Tsvetaeva's lyric cycles; Jennie also translates Anna Prismanova, another Russian émigré poet, and the two projects sit in conversation throughout January.
+
+The theological question the passage closes on is genuine and not rhetorical. Tsvetaeva wrote of God and the devil as intertwined, perhaps identical — the divine and the demonic sharing a single root in the overwhelming, the beyond-human, the force that demands everything. Jennie meets this position and replies: I feel they are probably one too, and I love God. The distinction between loving the devil and loving God, if God and the devil are one, is a distinction of orientation rather than object — which way you are facing when the overwhelming arrives. Whether there is a difference is the question the passage leaves open, and the right place to leave it.`
   },
 ];
 
@@ -5655,6 +5667,9 @@ const SYMBOLS_MORNING: TextEntry[] = [
     words: `and trying to insert into her work depth that would not otherwise be there.`,
     format: 'paragraph',
     paragraph: 6,
+    log: `The allegory/symbol distinction Jennie dismisses here has a long critical history worth naming. Coleridge, and after him the New Critics, elevated symbol over allegory: the symbol was organic, participatory, holding its meaning the way a flame holds heat — whereas allegory was mechanical, a sterile one-to-one translation of abstract into concrete. The distinction proved enormously influential and considerably overstated. Paul de Man, among others, later argued it was itself a kind of mystification — that symbols do not escape the substitutive logic they claim to transcend, and that allegory's supposed sterility is what actually makes it honest about its own procedures. Jennie arrives at the same place from the opposite direction: allegory at its best holds both depth and play, the same things symbols are supposed to hold exclusively.
+
+What the passage doesn't say, but shows: Jennie already has her symbols. The firebirds she drew as a very young girl, elongated and shapeless and red — the sun, moon, stars, great trees that haunted her pen all her life — these are not borrowed from the language of flowers or a book of superstitions. They arrived before the critical framework and will outlast it. The shame at the end is real and misplaced simultaneously: she is not inserting depth that would not otherwise be there. She is failing to recognize the depth that has always been there as depth, because it arrived without a system. The system would have killed it anyway.`
   },
 ];
 const SYMBOLS_MIDDAY: TextEntry[] = [
@@ -7707,6 +7722,11 @@ const MAN_IN_THE_MOON: TextEntry[] = [
     words: `Jennie laughed.`,
     format: 'paragraph',
     paragraph: 7,
+    log: `Two folk traditions arrive together here, which is appropriate for a figure made of reflected and borrowed light. The nursery rhyme the Man in the Moon calls after her — "There was an old woman tossed up in a basket / Nineteen times as high as the moon" — is a real English nursery rhyme, the old woman traditionally understood to be sweeping cobwebs from the sky, which is exactly what Jennie finds herself doing in the dream that follows. The rhyme knows where this is going before she does.
+
+The Jack Tar ballad is "Do Me Ama" — a broadside song in which a sailor intercepts the string a squire has arranged with a lady, pulls it in the squire's place, and is let in accordingly. The lady, discovering Jack in his tarry old shirt at dawn, declines to send him away: "I never will part from me jolly Jack Tar." The Man in the Moon deploys the refrain as a request for entry in the same spirit — transparent, cheerful, not particularly expecting success. Jennie gets the reference and declines, which puts her on the squire's side of the story rather than the lady's. The Man in the Moon laughs and throws her into the sky anyway. There is something almost admirable about a figure who accepts rejection this gracefully, even if he does immediately toss you into orbit.
+
+The moon is made of sticky white cheese. The dream is doing what dreams do — taking the folk tradition seriously enough to follow it to its literal conclusion. And Jennie laughed, wearing nothing but the huge old tee shirt with the turquoise fish, which is its own kind of tarry old shirt, and the Amanuensis laughed too.`
   },
 ];
 
@@ -8194,6 +8214,11 @@ const ALIENS_II: TextEntry[] = [
     words: `and a suspicion she had lost track of something important.`,
     format: 'paragraph',
     paragraph: 6,
+    log: `The aliens belong here for the same reason the Man in the Moon belongs here: this is a project that takes seriously everything Jennie actually encountered, dreamed, or half-dreamed, and the Grays are as much a part of the late-twentieth-century imaginative atmosphere as firebirds or fairy rings. The child who was fascinated by alien abduction narratives grew into the writer who treats them with the same matter-of-fact seriousness as the Firebird in the library stacks — neither more nor less real than the other wonders, filed under the same category: things that left a mark.
+
+The three encounters form an arc. The first is pure phenomenon: the pyramid, the figure transmitting and receiving, the sunburn that lasted a week, the only question Jennie can manage — "Are you real?" — meeting only the non-answer of continued transmission. The second is a dream-dialogue that turns theological: "We are all seekers" — Jennie's counter that seeking without finding means no true, no real, no home — and the alien's reply that the difference between unmoved mover and motion alone is slighter than she thinks, and that for now she is simply to try. The voice that follows, meant for the Jennie standing free in the twilight rather than the Jennie looking out from cold red and black eyes, is the most earnest thing any alien in any abduction narrative has ever said: each stone of the path outlined in blood, each grain of dust carrying a name, the spring in the barren rock both absent and present. It'll be a while.
+
+The third encounter settles the genre question with comic efficiency: they'd learned what there was to learn, bred enough hybrid babies, and wanted to repay her for her trouble. What they repay her with is eschatology — Evernost coming as terror and destruction and glory beyond all imagining, Jesus returning definitely figuratively and perhaps literally, environmental solutions she would not remember. "Definitely figuratively, perhaps literally" is the most theologically precise sentence in the Clear section, and the Amanuensis offers it without further comment.`
   },
 ];
 
