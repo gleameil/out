@@ -1743,7 +1743,7 @@ const SPRING_AND_EMMA: TextEntry[] = [
     paragraph: 2,
   },
 ];
-const DRAFT_EMMA_SUNSET: TextEntry[] = [
+const DRAFT_EMMA_SUNSET: TextEntry[] = [ // random
   {
     words: `Will you?`,
     format: 'random',
@@ -2047,7 +2047,7 @@ const ALIENS: TextEntry[] = [
     paragraph: 8,
   },
 ];
-const DRAFT_EMMA_DAWN: TextEntry[] = [
+const DRAFT_EMMA_DAWN: TextEntry[] = [ // random
   
   {
     words: `a window, glowing red-violet.`,
@@ -2190,7 +2190,7 @@ const DRAFT_EMMA_DAWN: TextEntry[] = [
     format: 'random',
   },
 ];
-const DRAFT_EMMA_SUNRISE: TextEntry[] = [
+const DRAFT_EMMA_SUNRISE: TextEntry[] = [ // random
   {
     words: `“As you wish, princess”`,
     format: 'random',
@@ -2332,7 +2332,7 @@ const DRAFT_EMMA_SUNRISE: TextEntry[] = [
     format: 'random',
   },
 ];
-const DRAFT_EMMA_MORNING: TextEntry[] = [
+const DRAFT_EMMA_MORNING: TextEntry[] = [ // random
   {
     words: `the occasional bottomless black crack`,
     format: 'random',
@@ -2472,6 +2472,15 @@ const DRAFT_EMMA_MORNING: TextEntry[] = [
   {
     words: `happily ever after`,
     format: 'random',
+    log: `The source for all of this is a novel draft — a book early in the Evernost sequence, titled after Emma, its protagonist. Jennie wrote it over the course of several months and finished somewhere near January 11, 2015; "on completion," the prose that follows notes, "she was pleased with the unobjectionable unpublishable creation."
+
+Emma is the princessy princess: small, honey-haired, exquisitely decent, a girl raised on Evernost stories and therefore, when she finds herself in Evernost, somewhat overqualified. The novel is structured around her first waking — she lies in a canopied bed in a tower full of flowers, and each flower releases a story into her mind. The stories come from an imaginary anthology: the girl in the dark room, the Rose Knight who dies of love, the Two Sisters and the Winter King, the Gray Witch's trick with the empty hut, the Boy Who Looked Up who spent centuries ascending to the stars and a century coming home, Teresa who sought the end of all sorrow and nearly reached it. They arrive in the language of fairy tales, complete with the measured cadences and moral inevitabilities the form promises — though what Emma does with each promise is complicated by her situation: she has just died, probably.
+
+The phrases scattered here come from every stratum of this enormous, rambling, earnest text — from the embedded stories (the lily held the story of Teresa, Weeping the scholar turned and left, as well as by ten dragons), from the strange bird-flight sections in which Emma escapes as light and crosses a white wasteland of bottomless cracks and towering herbivores to find the Tree of Life at the world's edge, and from the late scenes in which she converses with her own reflection — a version of herself who has ruled the Kingdom for fifty years and grown tired and strange. The Perdita story is in there too: the child of shepherds, and a foundling, lifted unwillingly with the august gladness.
+
+"Happily ever after" is the last line of the novel. It is, in context, not quite a surrender and not quite an apology: Emma has just been told that what comes next is beyond description, that any attempt would prompt laughter, and so the book ends where all such books end. It is, the Amanuensis thinks, earned.
+
+— the Amanuensis`,
   },
 ];
 const EMMA_DONE: TextEntry[] = [
@@ -2942,7 +2951,7 @@ const THEORY_TRUTH: TextEntry[] = [
     log: `D is Diana Wynne Jones (1934–2011) — British fantasy novelist, author of Howl's Moving Castle, the Chrestomanci series, Fire and Hemlock, and some two dozen other works of fierce, strange, formally inventive fiction. The obfuscation here is light: her palette (gray-green heather, mountain rocks, subterranean springs) is accurately her own, and the three essay ideas Jennie sketches — the Blake comparison, the defense of happy endings, the problem of truth — are real critical territory. Jones wrote deeply melancholy work and stood up for happy endings anyway. She was strange on truth in exactly the way described: accepting and not accepting, finding joy in the instability rather than distress. The Amanuensis notes that Jennie's essay on D ran to five thousand words and could not be finished, which is the correct response to a writer this large. Some books refuse to be contained by criticism, and the right reaction is to put down the pen and go make something. — the Amanuensis`
   },
 ];
-const THEORY_D: TextEntry[] = [
+const THEORY_D: TextEntry[] = [ // random
   {
     words: `Writing a book is a form of social interaction.`,
     format: 'random',
@@ -2996,6 +3005,15 @@ const THEORY_D: TextEntry[] = [
   },{
     words: `the deeper structures of reality`,
     format: 'random',
+    log: `Jennie had ambitions as a literary theorist. The evidence is this document: working notes toward a book she tentatively titled "On Truth and the Imagination in a Moral Sense," after Nietzsche — the title being, she acknowledged, both aspirational and self-aware. The premise she kept returning to is simple enough to fit in a sentence: literature gains its value both from the ways it imitates reality and the ways in which it departs from reality. What she wanted to do with the premise was not simple at all.
+
+The notes are a structured outline that keeps escaping its structure. She builds a careful taxonomy of mimesis — the surface of reality, its interstices, its deeper structures — and then immediately qualifies it, worries at it, argues with phantom interlocutors. She defends the existence of a knowable reality against postmodern fundamentalists (her phrase, and she knew it was uncharitable) with something between rigor and exasperation; she invokes Puddleglum; she swears. She wants to say that truth is part of connection between people and between people and their world, that the first part of love is to perceive — and she almost says it, and then brackets it for being too far into ethics. She notes that she wishes more critics would lay down the pen and pick up the magician's wand, as Alan Moore did. She adds "&lt;3&lt;3&lt;3" after a sentence she particularly likes, which is one of her critical methods.
+
+The reading list at the end is twenty-five items long, with footnotes. Diana Wynne Jones appears at position twenty-five. Beside her name: "Love grants acuity of sight."
+
+The book, as far as the Amanuensis knows, was never written. The notes remain as they are: alive, unruly, genuinely in love with their subject.
+
+— the Amanuensis`,
   },{
     words: `the first poem’s Unmoved Mover of a truth`,
     format: 'random',
@@ -3031,6 +3049,15 @@ const THEORY_D: TextEntry[] = [
   {
     words: `and — could not. Perhaps it was not time.`,
     format: 'paragraph',
+    log: `The source here is a 7,000-word essay Jennie wrote in May 2018, titled "Diana Wynne Jones's Complex Truth." It is the attempt at literary criticism she almost did not dare make — she knew she was too unscientific, too much a generalist, not trained as a philosopher, not trained as anything. She made the attempt anyway.
+
+The essay focuses on four poems embedded in Jones's Dalemark books: written by a fictional lord named Asgrim, passed down across generations, slowly learned and modified by Moril, the son of traveling singers, in *Cart and Cwidder*. The poems form a sequence on the nature of truth — from "unbounded truth," transcendent and outside time, to the truth of everyday "closer things," to the lightning-strike moment when the two kinds of truth collide, to a fourth poem that attempts, with limited success, to hold them both. Jennie traces this progression with care, noting where she finds the poems as poetry wanting and where she finds them, as records of thought, remarkable — and then follows the ideas into the body of Jones's novella "The True State of Affairs," where she argues that Jones goes further than her own character's poems dare: not resolving the paradoxes but accepting them, in the same way she writes "two contradictory things can be true at once" without apparent discomfort.
+
+This is, Jennie argues, Jones's real ambition — more quietly radical than Pullman's overthrow of God, because Jones is not replacing one certainty with another. She is writing about the complexity and the doubt and the contradiction themselves. About absolutism versus relativism, about fidelity and veracity and what they share, about what it means to tell the truth at all, and about what the cwidder will and will not answer to.
+
+Jennie started to edit the essay and add references, and could not. It sits at approximately the length she left it, finished in the sense that it says what she meant, and she was right: it does.
+
+— the Amanuensis`,
   },
 ];
 const MATH: TextEntry[] = [
@@ -3305,7 +3332,7 @@ const ALLEGORY_DAWN: TextEntry[] = [
 What Jennie takes from this encounter is not what either book intended to teach: the wrongness of Fletcher, its nightmare surrealism, its hell-logic beauty, persuades her to write allegory. This is the right lesson and the wrong path to it, which is how a lot of the best creative decisions get made. — the Amanuensis`
   }, 
 ];
-const ALLEGORY_SUNRISE: TextEntry[] = [
+const ALLEGORY_SUNRISE: TextEntry[] = [ // random
   
   {
     words: `proto-science, like alchemy`,
@@ -3366,6 +3393,13 @@ const ALLEGORY_SUNRISE: TextEntry[] = [
   {
     words: `better off openly talking about "symbolic representation" in general`,
     format: 'random',
+    log: `The source here is a fragment from an eleven-thousand-word blog post Jennie wrote between approximately 2013 and 2015 — posted in installments, never finished, abandoned when she gave up the theory blog. The subject was Angus Fletcher's *Allegory: The Theory of a Symbolic Mode* (1964), considered a classic by Harold Bloom and Stanley Fish, described by Jennie as "an infuriating experience."
+
+The frustration was genuine and also diagnostic. Fletcher, she writes, connects allegory to daemonic possession, obsessive-compulsive disorder, rank-signifying adornments, Orwellian newspeak, robots, proto-science, and the godlike AI, by means of a series of lateral leaps that often pass through the varied definitions of a single word on their way to somewhere else; the broader the concept gets, the more wiggle room he has to demonstrate still more outlandish things about it, until the category no longer holds. Her line here — that he'd be better off openly talking about "symbolic representation" in general — appears in a comment response near the end of the last installment. A reader had found the breadth interesting; she held her ground.
+
+She grants him a great deal. She also admits, in the opening paragraph, that her difficulty with him "is probably largely my lack of brains or of their particular kind of imagination." The post then spends ten thousand words demonstrating that this is not true.
+
+— the Amanuensis`,
   },
   {
     words: `City of Humanity: An Allegory`,
@@ -3422,6 +3456,17 @@ const ALLEGORY_SUNRISE: TextEntry[] = [
   {
     words: `etc & etc`,
     format: 'random',
+    log: `These are notes. Not notes toward the essay — toward the allegory itself.
+
+The book Jennie despised persuaded her, by its wrongness (or perhaps by its beauty), to write allegory. She had wanted to write an allegory before she read it: not merely a book with themes, but a book in which apparently human characters with names like Love and Envy wander around embodying their names. Fletcher's book — irrational, strained, reductive, and almost surreal in the sheer effort it expended to describe something so distant from reality — convinced her she was right to want this. The allegory she began sketching was called *City of Humanity*.
+
+It is not a separate project. It is a layer inside *Of the Abandoned* — the Wanderer's sections, in which a figure wanders a city that is and is not an ordinary city and encounters its personified forces: Routine, Safety, Decency, Acceptance, Endurance. Courage is first. Hope is last. Mr. Endurance, a short tough bow-legged old man who claims to have arrived before the Districts, ends the book. He says his quarry provides the rock on which the city is built, and he is consistently forgotten by lawyers and Hunters and whatnot.
+
+The notes here are earlier than the book — the sketch before the structure. Sir D does not always wear armor; Mr. D is easily confused with Sir D; Miss A grants the favor of flowers that give invisibility. The Island is mist-shrouded. The Edge verges on the abyss. H, or Hope, is a starved child thereof, gazing at the Island, with a garden that grows in the literal light of her eyes.
+
+Beauty is a seductress with innumerable masks and possibly no face. Truth is a veiled, receding virgin and possibly no face either. The question of whether they are the same is left open, with an ellipsis, and then "etc & etc." The sketch stops there. The allegory continues in the book.
+
+— the Amanuensis`,
   },
 ];
 const OUTSIDER_MIDDAY: TextEntry[] = [
@@ -3578,22 +3623,72 @@ const AUGUST_SUNSET: TextEntry[] = [
     paragraph: 4,
   }
 ];
-const AUGUST_DUSK: TextEntry[] = [
+const AUGUST_DUSK: TextEntry[] = [ // random
   {
     words: `tell me you`,
     format: 'random',
+    log: `The source is a poem from the August sequence — more than one hundred pages written in a trance, with daredevil outsider abandon, using a shitty poetry handbook, one poem per exercise. This is one of those exercises.
+
+Jennie said, "Show me." The Firebird said, "Tell me you."
+
+The reversal is the point. The Firebird's answer to the demand to be seen is to demand in turn to see — not Jennie's understanding of the divine, but Jennie. It then proceeds, in the poem, to show her herself: fingers like knives, bones singing, light instead of blood, the genome read aloud in its eyes. "And this," it says, "is only the wonder within you." The Show Me and the Tell Me You collapse into the same act.
+
+The poem then tries to answer the question and discovers the difficulty. What is there to tell? The first numbered stanza finds no stable "I" at all — only unrest, firegreen, gold, the scintillating agony of sensation, the unsettling possibility that "I" is just the extra dimension that makes seeing and feeling possible, almost nothing, and therefore everything. The second stanza tries to build a self from the outside, from what can be seen, and finds only blind reaching and the conviction that to build better you have to see more than an eye can see.
+
+The parenthetical that follows turns outward. You too, reader. Tell me you. It is the organizing question of the whole project: as we go, I'll try a few.
+
+— the Amanuensis`,
   },
   {
     words: `he wants to breathe fresh air`,
     format: 'random',
+    log: `The source is a poem from the August sequence. Jennie is in the backseat with her baby brother. She is old enough to have been given a book by Aunt Zoe about how she might feel jealous, or angry, or want him to go away. She does not feel those things.
+
+What she feels, watching him cry, is the urge to project: the roaring AC, the straps, the dizzy motion — she wants to understand what he is experiencing, and what she has to work with is what she would feel in his place. She catches herself doing this and is ashamed. She corrects herself. He could be crying for a hundred reasons. Baby reasons. Gas.
+
+Then, without flagging it as projection: he is lonely.
+
+The poem ends trying to do what the Firebird does — see into another's head and show them everything is all right. It cannot. It doesn't even know if everything is all right. It feels stupid.
+
+She is glad he is here. He is more love, not less. He smiles at her and then looks away.
+
+— the Amanuensis`,
   },
   {
     words: `makes me sizzle inside`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a summer camp poem — car ride in, car ride home, and Cassidy in between.
+
+The car ride in has two registers: Jennie dreaming half-sick in the heat, glad to be helpless and free; and Jennie furious that she has been sent away, certain her mother just doesn't want her around, itemizing what she would promise to do if allowed to stay. Then Cassidy arrives and the poem shifts into the bright anxious social chatter of girls who are happy to see each other — gel pens, April's lost notebook, Jace who is so hot — and into Jennie's bracketed interior, where Mom's gift of the book with gay people in it reads as both a kindness and a small deliberate wink.
+
+Then the Cassidy stanza. The lines compress, go syllabic, almost breathless — pink wire glasses, rhinestones, tangly copper ringlets she says she hates. Makes me sizzle inside. The dizziness is attributed to the car turning, but the car has nothing to do with it.
+
+The stanza doesn't dwell. It moves immediately to laughing until tired, the ink, the almost-cry over the taken book, and then the reconciliation — she starts reading to me — and they laugh the whole way to camp. The poem ends: Mom, thank you for inviting her. Thank you. And also I will miss you. Goodbye.
+
+It is, among other things, the first draft of knowing.
+
+— the Amanuensis`,
   },
   {
     words: `“Why the hell didn’t you say something was wrong, Jennie?”`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a heat stroke poem.
+
+The setup is scrupulously mundane: Dave emptying his water bottle over his head, the leather seat, the water bottle arithmetic, the sheepish "hang in there kid" from the father whose fault this is. Jennie is too sick to ask for what she needs and too anxious to take it without asking. She says okay. She is not okay.
+
+Then the heat becomes a body — twice her size, on top of her, and she wants to die but the wrong of it won't stop — and the poem breaks open. She reaches up. Give me cold. The answer comes, capitalized, not in any voice established by the poem: I GIVE YOU BOTH. The sentence cuts off. Dave yells.
+
+Cold cold cold. Wet paper towel. Don't get up.
+
+"Why the hell didn't you say something was wrong, Jennie?"
+
+"I don't know."
+
+"Oh, whatever!"
+
+The question is reasonable. It is also, in the context of a poem in which Jennie just received a divine answer she cannot report, a different kind of question entirely. The "I don't know" is the only honest answer to both.
+
+— the Amanuensis`,
   },
   {
     words: `If I could throw
@@ -3608,18 +3703,68 @@ Yes.
 NO!!!
 Yes, I think so.`,
     format: 'random',
+    log: `The source is a poem from the August sequence. The first speaker is the Firebird — the divine figure, the Firebird, the presence that will not leave. It opens by asking to be hated. Jennie obliges.
+
+What follows is the list: her mother, Jordan, Brooke, Mr. Patterson, Mrs. Whitt, her fat, her ugly, her nose, her hair, her voice, her boring, her feelings, her mind, things that are too bright and minds that do nothing but watch, and you, who are never gone. The list ends: I hate you so much. And I want you to be the rest of my life. I hate being stupid.
+
+The second movement tries to find a bottom. If she could throw away every last scrap of the world, if she could die without dying, she would. She does not want to die. And to love at all is to love you. God, I hate you.
+
+The third movement is the ugliest and most honest: the accusation that the divine presence is an abuser. That it entered without permission and will not leave. That claiming to know what she needs is a violation. That power over someone does not make you right about them. Am I wrong? She is not sure. No. NO!
+
+Then the exchange the phrase is drawn from. She asks it to leave. It says yes. She screams no. It says yes, I think so. And then: goodbye. Goodbye. For now. Yes. You'll be there when — if — I come back. Yes, little one.
+
+It does not leave. It never said it would leave permanently. It said yes because yes was the right answer to give a child who needed to hear she could ask.
+
+— the Amanuensis`,
   },
   {
     words: `You called it mercy and I call you liar.`,
     format: 'random',
+    log: `The source is a sestina from the August sequence. The end words are mercy, moon, glitter, veil, liar, face.
+
+A sestina is a form that works by returning — the same six words, in shifting order, across six stanzas and a three-line close. The choice of end words is the poem's argument before the poem begins. Jennie chose: mercy, moon, glitter, veil, liar, face.
+
+The poem is a request to be lied to. Not deceived — she knows it would be a lie, she says so directly — but given a veil, a moon instead of a sun, glitter instead of the direct gaze. The specific mercy she is asking for is the mercy of indirection. She cannot bear to stand face to face.
+
+The reversal that gives rise to the phrase happens in the second stanza: she names what she was given as mercy, and calls it a lie, and calls the giver a liar. The form then has to carry those words through four more rotations, which it does — liar returns as "lovely liar," the accusation softened but not retracted; mercy returns at the close as something she dances on the outskirts of. She praises. She grabs and gabs and glitters. She trembles.
+
+The sestina ends without resolution, which is what sestinas do. The form itself is the argument: these six words will keep returning. You cannot escape the end words you chose.
+
+— the Amanuensis`,
   },
   {
     words: `glitter in the sun of dawn`,
     format: 'random',
+    log: `The source is a fairy tale from the August sequence. It is the most formally composed piece in the set — the howling void, the orphan in rags, the beautiful queen in her night-colored cloak, the long journey carried sleeping between cliffs of snow. It knows what it is doing with the genre and does it straight.
+
+The girl has a flame in her cupped hands. She calls for help one hundred and one times, never expecting an answer. The answer comes on the hundred and first.
+
+The journey follows the fairy-tale logic precisely: the landscape transforms in stages, the ordeal gives way to warmth, the warmth to spring, the spring to dawn. The castle is dark until the last sentence. Then the sun rises, and it glitters.
+
+Jennie wrote this in August — the same August as the hate list, the same August as the heat stroke, the same August as the sestina and the demand to be lied to. It is not ironic. It is not in quotation marks. The girl is carried between the cliffs of snow and occasionally wakes to see the stars, and the cloak shines silver on the inside, and at the end they walk softly together holding hands and the castle glitters in the sun of dawn.
+
+She wrote the fairy tale too. She needed all of it.
+
+— the Amanuensis`,
   },
   {
     words: `I just don't have the energy`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a self-description, organized like a form being filled out.
+
+Name. Eyes. Hair. Nose. Mouth. Cheeks. Shoulders. Face. Brain. Day. Sweater. Jeans.
+
+Most of the entries are short and flat. Round biggish stuffy oily. All fat and yucky. Broad padded. Rectangular square jaw. The voice is the voice of someone who has looked in the mirror many times and arrived at the same verdict and stopped arguing with it.
+
+The hair entry is where the form breaks open, just slightly: Mom curls it in the morning. Always in my face. Makes me sneeze. It always bugs Mom that I don't push it out of my face. And then, almost without emphasis: but I guess I just don't have the energy.
+
+The entry continues. So does the list. Brain: there. I'm good at school at least.
+
+The sweater gets a full description — the blue one, like the sky at twilight only a little green and chalky, all wet. The jeans get a note about holes. Jennie is thorough. She fills out the form.
+
+It floats here — but the Firebird's question is present in the form of the poem itself, which is: who is here? This is the answer Jennie can give on this particular day. Jennifer. Jennifer Hagen. Jennie. Jennie. It's a kinda annoying day and she doesn't have the energy. Here she is anyway.
+
+— the Amanuensis`,
   },
   {
     words: `Living in a hollow shell
@@ -3627,69 +3772,247 @@ That every part of it
 Was your obedient limbs
 `,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a theological argument in free verse — a teenager working out, in real time, whether the word "you" can mean what she needs it to mean.
+
+The argument goes: every voice, every will, every spirit — all of it is you. She has heard people say this to God and doubts they feel it. She is trying to feel it. The poem accumulates the word "you" like pressure in a small room. You you you you you.
+
+Then the nightmare arrives. She dreams of a hollow shell in which every part is your obedient limbs — and no one can escape. This is the horror logic of total immanence: if everything is you, there is no inside. No I. Only mechanism wearing the costume of persons. "Obedient" does the real work: not just inhabited, but commanded. Not just full, but hollow in the filling.
+
+She argues back, catches herself, keeps going. And then the you speaks.
+
+No child. You are right. There is no escape. But someday it will be better than escape. In the meantime: I protect you from me. I hide you in mazes of delusive beauty, in veils. The word "delusive" is exact and not pejorative. The beauty is real. The misleading is a gift. To see the bare face of what the poem has been building — everything is you, every spirit a tiny atom, no inside and no outside — would be more knowing, more pain. Not right now. Right now it is sleep and dream and everything cool and simple.
+
+"Mazes of delusive beauty" is Blake — Enion, in the Four Zoas, Night the First, having looked into the secret soul of the one she loved and found sin and knowing she cannot return. In Blake the maze is what she has lost: the veil of not-knowing, mourned from outside it. Jennie borrows the phrase for the opposite movement — not lament but gift, the same beautiful deception offered back as mercy by the voice that is everything.
+
+She is thirteen or fourteen. She is reading the Four Zoas. The theology is not undeveloped.
+
+— the Amanuensis`,
   },
   {
     words: `In mazes of delusive beauty`,
     format: 'random',
-  },
-  {
-    words: `he was not like a man
-All knobby bones`,
+  },{
+    words: `He was not like a man
+all knobby bones`,
     format: 'random',
+    log: `The source is a poem from Jennie's college years. It begins in a dorm room: drafts, radiator, biology swimming across consciousness, head hurting. Then light not from anywhere, maybe from her, maybe she was on fire.
+
+The figure who bends over her is black as night with gold all around. She does not know him. He kisses her forehead, then her lips. Fire leaps to meet him.
+
+He identifies himself: I am nothing, the eye alone. You are all. You are Beheld therefore I am dark to you. He asks if she will suffer for him, for her, for him, the pronoun slipping between them. She says: show me. He says: throw back the blankets, lie still, do not be afraid.
+
+What follows is a list — foot to foot, ankle to ankle, shin to shin, all the way up — which lands, without ceremony, on the phrase floated here. He was not like a man all knobby bones. He was heavy heavy, just her shape. And then she is sinking into him, or he into her, and he says MORE.
+
+Then the catechism. Five questions, each the same: how did you get here? The answers come from five different moments of her life: the playground in fifth grade, feeling like a big smelly lump that doesn't belong. The dorm room, the stomachache, the drafts. Her birth. The galaxy she couldn't reach, the more-than-a-light-year distance, I am just five foot five — I invented you. And E: I died. Anything else was not enough.
+
+This is the same argument as the August poem, a few years earlier, given a body. The "you" has arrived in the flesh and the flesh is dark and heavy and just her shape. The question is the same one. She cannot reach it. She invented it. She died to get here.
+
+Jennie in college. Reading the Four Zoas. Writing this.
+
+— the Amanuensis`,
   },
   {
     words: `brisk brusque fast quick bored by my stuff frustrated perfume pushes`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is an inventory — the same method as the self-description, the same method as the body-inventory, the form Jennie reaches for when she needs to see something truly. Here the subject is her mother.
+
+The list runs without stopping: hard wry angry confusing laughing brisk brusque fast quick bored by my stuff frustrated perfume pushes brown red lipstick dyed hair. The observations are precise and contradictory and sometimes beauty is in there: can move like a dancer, can move like an angry animal, like a bird. Chrome. Convertible. Champagne. Lightning.
+
+Midway through: I hate her I want her to like me. No full stop. The list continues.
+
+At the end, having covered nearly everything: she loves me kind of I think. Then immediately: nothing to fight stupid meaningless life doesn't need read herself.
+
+Jennie is thorough. She fills out the form. Jacqueline — Jennie's mother in the autofiction — has her own chapters, her own interiority, her own exhaustion she understands and cannot quite escape. She is admirable in real ways. The poem is not a counterargument to that. It is what it is: a child's reckoning with someone who is fast and bored and always there and never quite for you. Jacqueline is a more complicated person than this list. The list is not about Jacqueline. It is about what it felt like to be Jennie in the same room as her.
+
+Maybe someday is doing a lot of work.
+
+— the Amanuensis`,
   },
   {
     words: `afraid, unwilling, exhausted, almost full of hate instead of love.`,
     format: 'random',
+    log: `The source is the autofiction — Jenny narrating Jennie's infancy.
+
+The passage begins with Jennie crying and being comforted well enough. The "well enough" is precise. Then: perhaps she felt in Jacqueline's arms that her mother was afraid, unwilling, exhausted, almost full of hate instead of love. The "perhaps" is the narrator being honest about the limits of what can be known about an infant's experience. The feeling named is not hedged.
+
+What follows is clinical: Freud, the pleasure principle, the reality principle, the outer world that resists. Then the narrator abandons the clinical frame entirely. Worse still, all of that, when you're in a family where you are not wanted.
+
+Jacqueline never wanted to admit she didn't want Jennie — she was conventional that far — and yet she didn't, with a miserable passion and the black deadness of postpartum depression that took her within two weeks of the birth. Dan was kind, slow, tired, busy, his mind always elsewhere. He didn't much love the girl either. He focused on work and felt warm and solid and familial without too much concern, and then Jennie got old enough that she didn't need constantly taken care of, and Jacqueline's irritability faded to indifference most of the time.
+
+Jennie grew in a clouded gray haze. Her heart beat. Her brain processed sensory data. All the things that were supposed to happen happened. In other senses she was not much different from dead.
+
+The passage ends: Really, Jennie begins at her death.
+
+This is the origin story. The fairy tale in August needed a girl with a flame in her cupped hands who called for help one hundred and one times. The theological poem needed a pantheist who already understood, viscerally, what it meant to be a tiny atom of something vast and not to matter to it. The Firebird encounter needed someone for whom the question of whether she was real enough to be worth suffering for was not rhetorical. Here is where it starts — in the arms of someone afraid, unwilling, exhausted, almost full of hate instead of love.
+
+Almost.
+
+— the Amanuensis`,
   },
   {
-    words: `Fire pressed me to it.`,
+    words: `Fire pressed me to it`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a first-person account of the first encounter.
+
+She is ten years old, walking home from school. The sky is gray, the cold is too tired to eat her but would if it could, her backpack smells like old sick sweat. She forgets to care whether she goes left or right. She forgets to care if she freezes or stops breathing. She forgets her body. She is a little warmth in a cold ocean, a candle almost out — the last of herself, the need of herself.
+
+Then light. Claws. Heat she cannot move from. A voice that says: Do not fight me. It will do no good. I will not let you move until I look at you. You cannot move, speak. You are starved. May I help you?
+
+She is afraid. She asks how. It tells her. She flees, and it lets her.
+
+A hundred hundred years or seconds later it finds her again: Still, I will help you if you choose. She almost leaves. She backs away over and over. Then: You cannot even choose. COME HERE.
+
+She came. She came. She came.
+
+That is why she is alive and not a wandering dot that is need without even really consciousness. She says this plainly. Then, one sentence later, also plainly: I hate you for it too of course.
+
+The poem ends in four short lines: the journey back, the warmth, herself pressing into fire, fire pressing back. The grammar that collapsed into dissociation at the start has gone quiet and declarative. The encounter that will generate a fairy tale, a pantheist theodicy, a dorm room visitation, a catechism with five answers — this is it. She is ten. She has just been claimed.
+
+— the Amanuensis`,
   },
   {
     words: `cold-hot, hot-cold, 
 I always am 
 a little sick, by now`,
     format: 'random',
+    log: `The source is a poem from the August sequence. It is a car ride.
+
+Trees in dusty green and bug-gnawed rust. Sun, which she likes. Mom's air conditioning making the temperature lurch. She is always a little sick by now — it's some of why she loves to ride: tired and helpless, free to dream. What she dreams she cannot say. Her mind is not bright-full of images and words. Only feelings like the sun behind a cloud, and thoughts like fog. Her memory slips.
+
+This is the same Jennie. The same clouded gray haze named in the infancy passage, the same dot of need walking home from school. Here it is not frightening or bleak — it is what she is, and it has its pleasures. Tired and helpless is also free. The fog is also the sun behind a cloud, which is still the sun.
+
+She is a child in the back seat. The trees run by. She loves this.
+
+— the Amanuensis`,
   },
   {
-    words: `It begins deep in Desolation`,
-    format: 'random',
-  },
+  words: `It begins deep in Desolation`,
+  format: 'random',
+  log: `The source is a poem from the August sequence. It is a place, and a condition.
+
+Desolation is not a mood. It is a weather type — gray sky, procedurally generated clouds, a George MacDonald poem drifting and dissolving, the player speaking into a void that absorbs the words. In August, Jennie decided to write it: with daredevil abandon, one poem per exercise from a shitty poetry handbook. She wrote about the worst, heat and rage, in a trance — dull or smug, but a trance.
+
+Desolation is where you end up when you don't know where you are. It is also, in this work, the word that sets you free — type it and escape. That double meaning is the whole thing: the name of the prison is the key.
+
+The "it" is the August sequence. Or the book. Or whatever Jennie is becoming. Things that begin deep in Desolation do not begin badly — they begin honestly.
+
+— the Amanuensis`,
+},
+{
+  words: `lives on, barely, miserably, because she too suspects her wishing was for naught,`,
+  format: 'random',
+  log: `The source is a poem from the August sequence. It is Celeste.
+
+Celeste is the part of Jennie that is "too good for her" — the one the others couldn't wake until a birthday candle flame did it, the one who, forgetting herself entirely, answered the heart's desire of the three: Emma's wish, Karen's wish, Jennie's nameless wanting. The wish worked. Celeste suspected it hadn't.
+
+She goes on living because living is what she does. Barely. Miserably. There is no drama in it — just the long diminishment of someone who has poured everything out and doesn't know if it mattered. She has no more strength or power to give.
+
+The fragment ends in a comma. It trails off the way she does — not finished, not finished with.
+
+— the Amanuensis`,
+},
+{
+  words: `this was always how it had felt like they thought about her`,
+  format: 'random',
+  log: `The source is a poem from the August sequence. It is recognition without resolution.
+
+When Jennie watches her family from Evernost — Dave tossing all night, Jacqueline screaming at a locked door, Dan unable to look at a birth certificate — she understands that the magic that made them forget her only literalized something. Not entirely, not quite fairly — she knows this — but there is an element of truth she cannot argue away. She pored over her memories and confirmed it: unjust, untrue, and yet.
+
+The sentence has no indignation left in it. Just observation. This was always how it had felt like they thought about her — not that they had thought about her, not even that they hadn't, but that they had thought about her like that, in passing, vaguely, without consequence.
+
+The hatred she almost felt, she fought feeling. This is what she was fighting.
+
+— the Amanuensis`,
+},
+{
+  words: `that stupid innocent look, for all she knew it really was innocent`,
+  format: 'random',
+  log: `The source is a poem from the August sequence. It is Jacqueline, mid-Evernost crossing.
+
+In the department store that was Jacqueline's passage through the gate, furious and frightened and looking for her children, she thought: Jennie was so fucking forgettable she fucking disappeared. And then, catching herself: it was just like Jennie to sneak off and make a fool of her, all the while with that stupid innocent look.
+
+Then the comma. Then the concession: for all she knew it really was innocent.
+
+That pause is the whole of their relationship — the accusation and the knowledge that the accusation might be wrong, held together, never resolved. Jacqueline did not soften the accusation by noting its possible injustice. She said both things at once. She could not do otherwise. She was Jacqueline.
+
+— the Amanuensis`,
+},
+{
+  words: `I almost lost you, and here you are.`,
+  format: 'random',
+  log: `The source is a poem from the August sequence. It is the return.
+
+Jacqueline said this when Jennie came through the gate she'd torn open in the nursing home, when the golden hand reached through the slit of light and pulled them one by one — Dave first, then Jacqueline, then Dan — into wherever Jennie was. Jennie had gone back for them. She had brought them to Evernost and then agreed to come home with them, knowing it would cost her.
+
+The sentence is simpler than the months that preceded it and the months that followed. It doesn't hold the magic or the argument or the dementia or the years of forgetting. It just holds the fact: I almost lost you. Here you are. Jacqueline was not a woman who said these things easily. She said this one.
+
+What she meant by "almost" is its own question. Three months? A lifetime? Evernost?
+
+— the Amanuensis`,
+},
   {
-    words: `lives on, barely, miserably, because she too suspects her wishing was for naught,`,
+    words: `You will grow to be all it is and greater`,
     format: 'random',
-  },
-  {
-    words: `this was always how it had felt like they thought about her`,
-    format: 'random',
-  },
-  {
-    words: `that stupid innocent look, for all she knew it really was innocent`,
-    format: 'random',
-  },
-  {
-    words: `I almost lost you, and here you are.`,
-    format: 'random',
-  },
-  {
-    words: `You will grow to be all it is and greater.`,
-    format: 'random',
+    log: `The source is a document Jennie writes for her family after the event — an attempt to explain what happened to Mom and Dad and Dave. She suspects her mother will throw it away or burn it. She writes it anyway.
+
+The document describes the wandering: endless gray, no body, nothing meaning anything, the mall that never closes where you search until you forget what you lost and then forget who you are. It describes the first encounter — the scratch, the claws, the heat, the voice that said it needed to look at her and held her tighter until she relaxed and it became warmth. The offer: help make you real, and really here. It would hurt sometimes, and you might not forgive me for it. She said no. She regretted it immediately. The thing came back. She sent it away again. It came back again and said: you cannot even choose. Come here.
+
+And she did.
+
+The document describes being carried inside golden light that said something so simple she couldn't understand it — like I love you and I see you and I'm sorry in advance, all at once. Then the Tree. The chains that were burning-bright but with a different brightness — straight, happy, rich, sensible. The Firebird apologizing: this makes it a bit easier, I think. It is only a little thing. You will grow to be all it is and greater.
+
+Strange hope springing up, swamping everything else: Great?
+
+Greater than I, greater than most things that live. Wait.
+
+This is the promise the whole work is built toward. Jennie is the stone the builder rejected. The cornerstone. The scarcely real vessel who wandered in gray until something claimed her and chained her to a tree and brought her a fruit and said wait, because what is coming requires waiting for.
+
+She wrote this for her family. She was right that they would not understand it. She was right to write it anyway.
+
+— the Amanuensis`,
   },
   {
     words: `It will be formally innovative good god.`,
     format: 'random',
+    log: `The source is a set of working notes — Jenny thinking on paper about what the book is and whether it can exist and how.
+
+She does not know yet. She is asking whether the visions are short shorts or images in a gallery or stories the star tells her. She is asking whether to write nonlinearly, whether to use chronology, whether theme and variations is a structure she can use. She is asking what the Being adds. She is listing what she wants to write: bird, tree, sun, moon, stars. GFL. Christian moments. Nature moments, highs. Love, lack of love. Something happened around age twelve. Emma, Karen, and Celeste.
+
+Between the questions and the lists, a single declarative sentence: It will be formally innovative good god.
+
+Not a plan. Not an instruction to herself. A realization arriving mid-list, unwelcome in its implications, accepted anyway.
+
+The notes continue. There is still so much she doesn't know. But that part, apparently, is settled.
+
+— the Amanuensis`,
   },
   {
     words: `physicists who think time is an illusion`,
     format: 'random',
+    log: `The source is an introduction — Jenny breaking frame to explain herself to the reader.
+
+She has just admitted she has no idea where to start. Her part of the story doesn't have a plot. Nor does Jennie's, once she gets out of the Kingdom. Plots require time, she says. Evernost is the place of endless summer.
+
+Then, parenthetically, almost as a footnote to her own uncertainty: even in our world, there are physicists who think time is an illusion.
+
+She moves on immediately. The observation is not developed. It doesn't need to be — it does its work in passing, the way the best parenthetical asides do. She is not starting at the beginning because there may not be a beginning. She is not worried about this. She has read the physicists.
+
+The whole book is organized on this premise.
+
+— the Amanuensis`,
   },
   {
     words: `asking for your faith or at least your hope`,
     format: 'random',
+    log: `The source is the same introduction, a few paragraphs later. Jenny is making her case.
+
+She knows what she's asking. She knows the material looks thin from the outside — tropes and personal archetypes regurgitated, too much pompous silliness, oversimplification, genre. She has said all of this about herself, at length, without flinching. And then she makes the defense anyway, in three numbered points.
+
+First: sympathy. This has been with her all her life. Her passion has narrowed to a point and this Theme is that point. Second: ambition. Its meanings have grown to encompass every part of life as she knows it. Third: faith. Or at least hope. For the most part, it is not the subject matter but the treatment of that subject matter that determines the merit of a work of art.
+
+She is not promising she will succeed. She has already said she probably won't, not fully, not to the standard she has set for herself. She is asking for the benefit of the doubt from a reader who has not yet seen what the treatment will be.
+
+— the Amanuensis`,
   },
 ];
 
@@ -4974,7 +5297,7 @@ const TREE_OF_LIFE_SUNSET: TextEntry[] = [
     paragraph: 1,
   },
 ];
-const TREE_OF_LIFE_ENUMERATION_DUSK: TextEntry[] = [
+const TREE_OF_LIFE_ENUMERATION_DUSK: TextEntry[] = [ // random
   
   {
     words: `She had written about the Tree before too, but she wanted to write a learned enumeration`,
@@ -5035,6 +5358,11 @@ const TREE_OF_LIFE_ENUMERATION_DUSK: TextEntry[] = [
   {
     words: `slowly turning hell into heaven`,
     format: 'random',
+    log: `These fragments and those that follow across night and wee hours come from "The Roots" — a piece of systematic cosmological writing, conducted in a deliberately archaic register and with full awareness of its own limits, that attempts to enumerate the structure of the Tree of Life. The Norse model numbers the roots three; this one proposes twenty-seven, drawing from hells, earthly paradises, and High Heavens, with a minor rootlet reaching the City — the community of all being, the true Jerusalem, halfway between paradise and heaven.
+
+The three hells are mapped with Cathar precision: the cold and empty hell of absence, nearest to nothing; the hot and bad hell of torment; and this world, the hell of sin, best of the three and worst for those living in it because beauty here is always entangled with suffering, and the small freedoms we are allowed mostly serve to degrade us further. The Tolstoyan inversion that structures the essay — hells classifiable, paradises infinitely various — is earned rather than decorative. The hells converge; the paradises, earthly and high, multiply without end.
+
+The squirrels are real. The moths are harder to justify in the abstract but easier to love, and the Amanuensis considers this the most theologically precise sentence in the piece.`
   },
 ];
 const TREE_OF_LIFE_ENUMERATION_NIGHT: TextEntry[] = [
@@ -5161,6 +5489,7 @@ const TREE_OF_LIFE_EXHAUSTION: TextEntry[] = [
   {
     words: `Give up for now.`,
     format: 'random',
+    log: `The enumeration defeats itself, as it should. An infinite tree resists complete description; the writing knows this and stops. These five fragments are the essay acknowledging its own limit — which is, in the terms of the essay itself, the correct response to the infinite: not more enumeration, but attentiveness, and then silence.`
   },
 ];
 
@@ -5299,6 +5628,11 @@ const FIREBIRDS_MORNING: TextEntry[] = [
   {
     words: `not world but flame`,
     format: 'random',
+    log: `These three entries cover the making of the firebird painting — acrylic on canvas, a rhea used as earthly model, its gray eyes turned yellow, a crest added, fruits surrounding it against the hard hot sky behind the Tree — and the visionary writing the painting both emerged from and generated. The painting is sketchier and stranger than Jennie wanted; the firebird, unlike the Tree, resisted adequate representation. The chaos of the feathers was almost right. Almost.
+
+The fragments scattered across morning come from a piece of writing that moves between color-theology and mystical encounter at a speed prose can barely sustain. Yellow is joy, intermingled with all, an edge of everything even in the shadowed world. Red is pain and also life, vivid and present, the deepest color — and then the correction arrives, because pure joy doesn't feel like any color at all, and even white feels like a shade of gray, and the red of red and the red that is also violet refuse to stay in separate categories. Blue is the flat terrible abstraction, the end to which all things are means, or not — the end keeps being deferred, from each hue to the next.
+
+The piece ends in dialogue. The bird that is the angel that is her other further self says: speak, child. Jennie begins: we are — and the bird completes it, and extends it to the star-figure, and extends it further. All of us together reaching up, the firebird an image and more than an image, the fruit she cannot not reach for. The bird falls away into painting and does not fall away. The painting in the painting and the painting in the project are the same gesture: an attempt to hold what resists holding, which comes out raggedy and almost right, and is enough.`
   },
 ];
 
@@ -5410,6 +5744,9 @@ const FIREBIRDS_ABSTRACT_WEE_HOURS: TextEntry[] = [
   {
     words: `no obvious right course of action`,
     format: 'random',
+    log: `The cosmological attempt these excerpts come from describes how firebirds are more like birds than humans, probably, if such a comparison can even be made meaningfully. Their range of willing is smaller than a human's. They are growing to and emerging from the earth simultaneously. They love — but love here means something precise: admiring what is real and what is possible, the is and the could-be of any state of being, and strengthening it by admiring. This is not the love that directs or intervenes. It is the love that attends.
+
+Which makes Jennie's rescue an anomaly, or a sign of something, or a situation with no obvious right course of action in which some action is necessary — the piece holds all three possibilities open. The earth the firebirds inhabit and guard is not our world, or not only our world: it is something broader of which our world is a small and fairly straightforward part, deeply tragic, containing images of the true earth's furnishings. William Blake claimed our world is a kind of underworld, cold and dark beneath the surface of the real — and Jennie, who has been elsewhere, suspects he was right.`
   },
 ];
 
@@ -5538,8 +5875,25 @@ const DISSOLUTION_SUNRISE: TextEntry[] = [
   {
     words: `flock of eagles`,
     format: 'random',
-  },
+    // add to first entry of DISSOLUTION_DAWN or DISSOLUTION_SUNRISE, whichever opens the section
+log: `The source is a dream — or rather, the account of someone who has been torn to pieces inside one and is dictating from whatever remains.
 
+She looked at the sign and felt sick, exhausted dread: this was one of those nightmares where you always fail and she hadn't even started. The sky was dim purplish blue, almost dawn. She was already in fetal position. She had no watch, no phone, no timepiece. She closed her eyes intending to count to ten and opened them to pink streaks across the sky.
+
+The labyrinth was leafy, cold, her breath steaming. Dead ends. She couldn't remember which way she'd come. She resolved to memorize turns and failed. She resolved to take the uncongenial path and failed. She found a bronze sun face set into the wall, partly obscured by ivy, and a sign she felt compelled to follow without knowing why. Three dead ends. Untrustworthy anger. She ripped aside the ivy and put both hands on the wall. Nothing happened.
+
+Then the sun crept over the wall, and the sun was a flock of eagles, and the eagles tore her to pieces.
+
+She expected to wake up at home, heart pounding. She hasn't yet. It's felt like centuries getting herself even a voice. She doesn't know if the labyrinth is still there — she still hasn't managed to make herself anything you'd call senses. She is dictating her plea for help in the unlikely event you know enough to do anything, or even care.
+
+This is what Jenny could not write: the Dissolution stories, one for every inhabitant of the Kingdom, or at least a representative cross-sample across time and space and social strata. She could scrounge up only a few scraggly stories. She could not see the Firebird, or even herself, clearly enough. Not a single story came through in its right shape. She had to wait — still to wait, always to wait.
+
+The nightmare and the author's accounting are the same experience. The labyrinth is the book she cannot finish. The sign she cannot read is the ending she cannot see. The eagles are what happens when the sun finally arrives anyway.
+
+She is still in there. The experience she wants to turn into something live is still waiting for its right shape.
+
+— the Amanuensis`,
+  },
 ];
 
 const SYMBOLS_MORNING: TextEntry[] = [
