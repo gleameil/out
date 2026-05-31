@@ -7,6 +7,7 @@ import { createSoundControl, SOUND_CONTROL_ID } from "./shared/sound";
 const LETTERS = 'evernost'
 
 function start() {
+    document.getElementsByTagName('body')[0].style.display = 'none';
     handleQueryParams();
     const all = document.getElementsByTagName('html')[0];
     if (!document.getElementById(SOUND_CONTROL_ID)) {

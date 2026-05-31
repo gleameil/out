@@ -1,10 +1,10 @@
-import { ImageURLSrc } from "../../../shared/constants";
+import { FONTS, ImageURLSrc } from "../../../shared/constants";
 import { JANUARY_COLORS } from "../../../shared/color";
 import { removeByClassName } from "../../../shared/helpers";
 import { Time } from "../../../shared/time/time.januaryConstants";
 import { getTime } from "../../../shared/time/time";
 import { backgroundForTime } from "../january.helpers";
-import { Dialogue, Option, Options, SNOWSIGHT_DIALOGUES, SNOWSIGHT_SPEAKERS, Speaker, Statement } from "./snowsight.constants";
+import { Dialogue, Option, Options, SNOWSIGHT_DIALOGUES, SNOWSIGHT_LOG_COLORS, SNOWSIGHT_LOG_FONTS, SNOWSIGHT_SPEAKERS, Speaker, Statement } from "./snowsight.constants";
 
 function turnRedBlack(image: HTMLImageElement) {
   image.style.filter = 'brightness(0%)';
@@ -85,6 +85,33 @@ function determineImageIndex(dialogue: (Statement | Options)[], index: number) {
   }
   return placeInSpeakerMonologue % numberOfImages;
 }
+
+function printLog(log: string): void {
+  const tagMatch = log.match(/\s*\[([AOB])\]$/);
+
+  if (!tagMatch) {
+    // Existing untagged logs — default console color, no signature
+    console.log(log);
+    return;
+  }
+
+  const tag = tagMatch[1];
+  const body = log.slice(0, log.length - tagMatch[0].length);
+
+  const authorMap: Record<string, { label: string; color: string, fontFamily: string }> = {
+    A: { label: '~ Amanuensis', color: SNOWSIGHT_LOG_COLORS.amanuensis, fontFamily: SNOWSIGHT_LOG_FONTS.amanuensis },
+    O: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.orangeJennie, fontFamily: SNOWSIGHT_LOG_FONTS.orangeJennie },
+    B: { label: '~ Jennie',    color: SNOWSIGHT_LOG_COLORS.blueJennie, fontFamily: SNOWSIGHT_LOG_FONTS.blueJennie },
+    J: { label: '~ Jenny', color: SNOWSIGHT_LOG_COLORS.jenny, fontFamily: SNOWSIGHT_LOG_FONTS.jenny }
+  };
+
+  const { label, color, fontFamily } = authorMap[tag];
+  console.log(
+    `${body} %c${label}`,
+    `color: ${color}; font-family: ${fontFamily};`
+  );
+}
+
 function snowsee(dialogue: (Statement | Options)[], index: number, nextTime: () => void, onEnd?: () => void) {
   const entry = dialogue[index];
   const nextWords = () => snowsee(dialogue, index + 1, nextTime, onEnd)
@@ -103,7 +130,7 @@ function snowsee(dialogue: (Statement | Options)[], index: number, nextTime: () 
         snowsee(optionsEntry.options[i].next, 0, nextTime, nextWords)
       });
       if (optionsEntry.log) {
-        console.log(optionsEntry.log);
+        printLog(optionsEntry.log);
       }
     }
   } else {
@@ -111,7 +138,7 @@ function snowsee(dialogue: (Statement | Options)[], index: number, nextTime: () 
     showWords(statementEntry.words, statementEntry.speaker || SNOWSIGHT_SPEAKERS.you, determineImageIndex(dialogue, index));
     document.getElementById('snowsight-container')?.addEventListener('click', nextWords, { once: true });
     if (statementEntry.log) {
-      console.log(statementEntry.log);
+      printLog(statementEntry.log);
     }
   }
 }
