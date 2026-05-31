@@ -349,7 +349,7 @@ export function whiteoutMiddayOrDispensation(words: string[]): FullPoem {
     if (clicks === 1) {
       setBackground(time.backgroundColor, time.background);
     }
-    if (clicks <= 12) {
+    if (clicks <= 12 || (clicks <= 14 && iterations === 3)) {
       dispensationTo(parent, ALL_BY_DISPENSATION, clicks, iterations);
       snowstorm({ parent, colors: time.whiteoutSnowflakeColors, quantity: Math.floor(Math.random() * 3) + 3})
       return;
