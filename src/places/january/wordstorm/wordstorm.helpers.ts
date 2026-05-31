@@ -191,7 +191,7 @@ function thereIsA(parent: HTMLDivElement, words: string[]) {
 
 function dispensationTo(parent: HTMLDivElement, words: string[], clicks: number, iteration: number) {
   const wordCount = document.getElementsByClassName('dispensation-to').length;
-  const nextItemIndex = iteration * 11 + clicks - 1;
+  const nextItemIndex = iteration * 12 + clicks - 1;
   const phrase = words[nextItemIndex];
 
   const fonts = [FONTS.imFell, FONTS.montserrat, FONTS.ebGaramond, FONTS.nanumBrushScript]
@@ -344,7 +344,8 @@ export function whiteoutMiddayOrDispensation(words: string[]): FullPoem {
 
   function dispensation(clicks: number, time: Time): string | undefined {
     const parent = document.getElementById('wordstorm-container')! as HTMLDivElement
-    const iterations = parseInt(localStorage.getItem('dispensations') ?? '0', 10); 
+    let iterations = parseInt(localStorage.getItem('dispensations') ?? '0', 10); 
+    iterations = iterations % 4;
     if (clicks === 1) {
       setBackground(time.backgroundColor, time.background);
     }
