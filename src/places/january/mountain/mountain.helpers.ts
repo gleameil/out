@@ -96,12 +96,14 @@ export function walk(schedule: WalkTime): FullPoem {
     if (clicks > 30) {
       return END;
     }
-    if (clicks === 1) {
-      backgroundForTime();
-    }
     const parent = document.getElementById('mountain-container')! as HTMLDivElement;
-    backgroundForTime(parent);
-    bwSun(parent, time);
+    if (clicks === 1) {
+      // Background and ray-sun are built once. This ran on every click and
+      // called bwSun twice per click, so a 30-click walk at sunrise/midday/
+      // sunset appended 43,200 ray divs that were never cleaned up.
+      backgroundForTime();
+      setBackground(time.mountainBackgroundColor, undefined, parent);
+    }
     const clicksPerBackgroundImage = Math.ceil(30 / backgroundImages.length);
     if ((clicks - 1) % clicksPerBackgroundImage === 0) {
       removeByClassName('mountain-walk-background');

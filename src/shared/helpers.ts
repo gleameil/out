@@ -145,7 +145,10 @@ export function sun(parent: HTMLDivElement, rayPrefix: string, time: string) {
     }
     if (i % 3 === 0 && ray.classList.contains(`${rayPrefix}-normal-ray`)) {
         ray.id = `${i}`
-        ray.classList.replace(`${rayPrefix}-${time}-normal-ray`, `${rayPrefix}-long-ray`);
+        // The class added above is `${rayPrefix}-normal-ray`; naming the
+        // time-qualified variant here made the replace a silent no-op, so
+        // `-long-ray` (and its CSS) never applied to anything.
+        ray.classList.replace(`${rayPrefix}-normal-ray`, `${rayPrefix}-long-ray`);
     }
     ray.style.transform = `rotate(-${i/2}deg)`;
     parent.append(ray);

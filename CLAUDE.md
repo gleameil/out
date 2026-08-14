@@ -1,6 +1,14 @@
 # CLAUDE.md — `/out/`
 
-This file orients an AI assistant (or future developer) to the `/out/` codebase. Read this before touching anything. Fuller documentation lives in the `docs/` folder (to be built out as source is reviewed): `doc-out-january.md` (weather system and place dispatcher), and further docs as sections are documented.
+This file orients an AI assistant (or future developer) to the `/out/` codebase. Read this before touching anything. Fuller documentation lives alongside this file:
+
+- `doc-out-january.md` — January weather dispatcher and shared infrastructure
+- `doc-wordstorm.md` — poemstorm and whiteout weather (all click-driven text experiences)
+- `doc-snowsight.md` — snowsight weather (branching dialogues, drawn characters)
+- `doc-mountain.md` — clear weather (text, walk, upAndDown, maze stub)
+- `doc-night.md` — night weather (stars, clouds, ambient music)
+- `doc-out.md` — cloudy weather and the `out()` experience (George MacDonald poem, dialogue system, desolation)
+- `doc-instrument.md` — the Web Audio API synthesizer used throughout poemstorm/whiteout
 
 ---
 
@@ -81,7 +89,7 @@ See `doc-out-january.md` for the full weather dispatch architecture. The content
 
 **Night** — Procedurally generated. Clouds fade in and out; stars twinkle; ambient music plays. No text. Entirely visual and sonic — a duration experience. The music is an original composition: a simple, eerie ascending figure in a major scale, performed on recorder with ambient space sound effects. This weather type does not transcribe.
 
-**Cloudy** — A gray sky, visually undifferentiated. No text, no interaction. Like night, it is an experience of atmosphere and duration. Details of the render are pending source review.
+**Cloudy** — Routes to `out()`: a gray sky with procedurally generated clouds, words from George MacDonald's moon poem drifting and dissolving, a text input through which the player can speak into the void (typed and selected words join the floating pool), and looping desolation audio. Escape in January via clicking a snowflake or typing `'desolation'`; no escape affordance yet for February. See `doc-out.md`.
 
 **Poemstorm** — Poems delivered a click at a time, one line or stanza per click. Each click also plays a bell-like tone (strong attack, quickly fading) arranged in scales that vary by context; a future update will move to chords. Color scheme is determined by time of day (see Design System below). The full poem catalog is in `doc-out-january.md`.
 
@@ -89,7 +97,7 @@ See `doc-out-january.md` for the full weather dispatch architecture. The content
 
 **Snowsight** — Philosophical and essayistic dialogues set against a sky whose color depends on time of day. Linear with occasional player choices. Two figures are always present: Jenny (left) and You (right — Jenny's image reversed and filled as silhouette, color shifts with time-of-day via CSS filter). Other Jennies appear and disappear, cycling through drawn frames in stop-motion animation. Each dialogue is keyed to a specific day and time. Console log text accompanies some dialogues — meta-commentary addressed to the visitor — visible only in the browser console in the live experience.
 
-**Clear** — Autofiction: prose passages from the novel-in-progress, rendered against a clear sky. Keyed to specific days and times. The clearest weather is also the most linguistically dense — the literal text of the book, visible through the window.
+**Clear** — The novel-in-progress, rendered against monochrome drawn landscapes. Four modes: `text` (prose accumulates left, drawn image right), `walk` (animated figure traverses a progressively detailed landscape, click by click), `upAndDown` (split-screen: walk on top half, text on bottom against laptop-room image), and `maze` (not yet implemented — stub that silently advances). No audio. The click mechanic uses the poemstorm bell instrument. See `doc-mountain.md`.
 
 ### Time-of-Day Color Schemes
 
@@ -131,6 +139,8 @@ The snowsight dialogues have a defined cast. Each character is a drawn figure wi
 
 **moonJennie** — Full robed figure, tall and narrow, three-quarters view. The robe is the drawing: long vertical stripes in metallic gel pen (purple, blue, silver, pink) flowing to the ground. A crescent moon at her side. Face barely suggested. Font: Indie Flower. Panel: dull violet. The archetype end of the Jennie spectrum.
 
+**The Other** — A Firebird figure. No drawn image — only the dialogue bar appears when it speaks (black panel, yellow text, Montserrat). Appears exactly once in the January dialogues. Do not remove without confirming which dialogue contains it.
+
 ---
 
 ## Design System
@@ -139,7 +149,11 @@ Fonts, colors, and assets follow the same shared conventions as `/in/`. The font
 
 **`OUT_COLORS`** — the color palette for `/out/`'s weather system, parallel to `JANUARY_COLORS` and `FEBRUARY_COLORS` in `/in/`. Details pending source review.
 
-The `Color` class migration (from raw `rgb(...)` strings to `Color` instances with `fromString`, `makeTransparent`, `isEqualTo`) is in progress in `/in/` and may or may not be reflected in `/out/`. Check the source before assuming which approach is in use.
+The `Color` class migration (from raw `rgb(...)` strings to `Color` instances with `fromString`, `makeTransparent`, `isEqualTo`) is in progress in `/in/` and is present but entirely unconsumed in `/out/` — the three `*_COLOR_SET` objects are built at module load and nothing reads them. Check the source before assuming which approach is in use.
+
+**`/out/`'s copy of `Color.fromString` was broken until August 2026** and returned opaque white for every input: it opened with `if (colorString = 'initial')`, an assignment rather than a comparison, making the condition always truthy and the rest of the function dead. Fixed, along with three parser bugs shared with `/in/`. See `docs-shared/doc-shared.md` for the full account. The lesson worth keeping: neither repo type-checked, so a single `=` sat in shared-design-system code indefinitely. Both repos now have a `tsconfig.json` and an `npm run typecheck` script.
+
+**The instrument system** (`shared/instrument/`) — a Web Audio API synthesizer using equal-temperament interval math and named tonal worlds (scales defined by multiplier arrays). Two instrument types: `bell` (strong attack, 5-second decay — the poemstorm/wordstorm click tone) and `harp` (slow swell, exponential release — modelling an **Aeolian harp**, sounded by wind rather than by hand). The Midday Storm sun is the Aeolian harp: 720 rays are the strings, the cursor is the wind. Each time-of-day slot maps to a specific timbre × tonal world pairing. Planned upgrade: chords rather than single notes per click. See `doc-instrument.md`.
 
 **Assets** are Parcel-resolved `URL` objects. When setting `src` on an `<img>` or `<audio>` element, use the `ImageURLSrc` / `AudioURLSrc` cast pattern.
 
@@ -165,7 +179,8 @@ How much of this is truly shared code (symlinked or copied) vs independently mai
 
 Full debt details will accumulate in each `doc-` file as source is reviewed. Known items from this entry point:
 
-1. **`JANUARY_SCHEDULE` is duplicated** — must be kept in sync manually with `/in/`. A divergence causes the `/in/` laptop weather forecast to lie while `/out/` shows the true weather.
+1. **`JANUARY_SCHEDULE` is duplicated** — must be kept in sync manually with `/in/`. A divergence causes the `/in/` laptop weather forecast to lie while `/out/` shows the true weather. **Verified in sync August 2026** — a direct diff of the two `time.januaryConstants.ts` files shows the schedule data itself is identical; the only differences are import paths, `/in/`-only exports (`END_OF_JANUARY`, `JANUARY_FAVICON`), and one comment. Re-run `diff in/src/shared/time/time.januaryConstants.ts out/src/shared/time/time.januaryConstants.ts` after touching either.
+   **A second, undocumented duplication exists:** `FEBRUARY_COLORS.black` has already drifted — `rgb(70, 50, 55)` in `/in/`, `rgb(70, 50, 60)` in `/out/`. Harmless today because `/out/` renders no February, but it shows the design tokens are diverging quietly. Left unchanged pending a decision on which value is canonical.
 2. **`OUT` URL in `/in/` is a comment-swap gotcha** — localhost URL lives on the adjacent line in `/in/`'s `places/home/constants.ts`; has shipped accidentally. Fix: environment variable.
 3. **Sound control is an emoji** — should be a drawn asset or native browser controls. Shared debt with `/in/`.
 4. **`out()` has no escape route for February** — `out()` is a full experience (cloudy weather, George MacDonald poem, dialogue system, desolation audio), not a stub. But it does not render the homeward button or any visible escape affordance. In January, players can escape by clicking a snowflake (which calls `escapeOut()`) or typing `'desolation'` as a keyphrase. In February, there are no snowflakes, so the browser back button is the only practical exit. This is half-intentional (the experience represents inescapability) but crosses into user-hostile territory. Fix: add the homeward button, or a slow fade-in of some escape affordance, for February specifically. See `doc-out.md` for the full `out()` architecture.
@@ -185,4 +200,4 @@ Full debt details will accumulate in each `doc-` file as source is reviewed. Kno
 
 **The two-repo structure is correct and should stay.** Different deployment cadences, `/out/` is directly linkable, and the query-param contract is cleaner than shared state. The cost is the manual sync points — keep them documented.
 
-**The `underConstruction` gate** is a useful pattern for soft-hiding in-development content behind a discoverable keyphrase. If February `/out/` content is built incrementally, this mechanism (or a month-specific equivalent) is worth restoring rather than routing directly to an empty stub.
+8. **Mountain (`clear` weather) has no audio** — the only January weather type without music. Music for this section is a known future addition; candidates include public-domain recordings or transcriptions of Griffes or similar impressionist/symbolist works, consistent with the literary register of the clear weather content. Transcription is labor-intensive (the February book used a hand-transcribed Zelenka piece); public-domain recordings or a simpler ambient approach using the existing instrument system are lower-cost alternatives. is a useful pattern for soft-hiding in-development content behind a discoverable keyphrase. If February `/out/` content is built incrementally, this mechanism (or a month-specific equivalent) is worth restoring rather than routing directly to an empty stub.

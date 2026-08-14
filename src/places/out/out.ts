@@ -11,7 +11,10 @@ import { setUpWindow } from "../january/january";
 const GETMEOUTTAHERE = 'desolation';
 
 export function escapeOut() {
-  const counter = parseInt(sessionStorage.getItem('counter') ?? `${longestTimeOut}`, 10) || longestTimeOut ;
+  // `counter` is written to localStorage by out() and move(); reading it from
+  // sessionStorage always missed, so howLong was always 0 and timeOut never grew.
+  const storedCounter = parseInt(localStorage.getItem('counter') ?? '', 10);
+  const counter = Number.isNaN(storedCounter) ? longestTimeOut : storedCounter;
   const howLong = longestTimeOut - counter;
   const timeOut = parseInt(localStorage.getItem('timeOut') ?? '0', 10);
   localStorage.setItem('timeOut', `${timeOut + howLong}`);
