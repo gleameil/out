@@ -61,12 +61,7 @@ export function situateWord(): number {
 }
 
 export function wordChosen(element: HTMLParagraphElement) {
-  const word = element.innerText;
-  let chosenWords = localStorage.getItem('chosenWords');
-  if (!chosenWords?.includes(word)) {
-      chosenWords = !!chosenWords ? `${chosenWords}, ${word}` : word;
-  }
-  localStorage.setItem('chosenWords', chosenWords);
+  rememberWord(element.innerText);
   element.classList.add('dissolving');
   setTimeout(() => element.remove(), 500);
 }
@@ -128,13 +123,20 @@ export function setNewPossibleUtterance(utteranceSet: number, i: number, current
   }
 }
 
+// `chosenWords` is split on ', ' by addWords, so an empty store must not gain a
+// leading separator — that produced a blank phrase floating in the sky.
+function rememberWord(word: string) {
+  const oldWords = localStorage.getItem('chosenWords') ?? '';
+  if (!word || oldWords.includes(word)) {
+    return;
+  }
+  localStorage.setItem('chosenWords', oldWords ? `${oldWords}, ${word}` : word);
+}
+
 export function speak(event: KeyboardEvent) {
   if (event.key === 'Enter') {
-      const whatWasSaid = (event.target as HTMLInputElement).value;
-      let oldWords = localStorage.getItem('chosenWords') ?? '';
-      if (!oldWords.includes(whatWasSaid)) {
-          localStorage.setItem('chosenWords', `${oldWords}, ${whatWasSaid}`);
-      }
+      const whatWasSaid = (event.target as HTMLInputElement).value.trim();
+      rememberWord(whatWasSaid);
       (event.target as HTMLInputElement).value = '';
   }
 }
@@ -143,11 +145,8 @@ export function checkIfUtteranceSelected(event: InputEvent, currentPossibleUtter
   const whatIsBeingSaid = (event.target as HTMLInputElement).value;
   for (let i = 0; i < JANUARY_UTTERANCE_SERIES[0].length; i++) { // will be based on what user has seen eventually once there are more utterance series
       if (currentPossibleUtterances[i] === whatIsBeingSaid) {
-          setNewPossibleUtterance(0, i, currentPossibleUtterances); 
-          let oldWords = localStorage.getItem('chosenWords') ?? '';
-          if (!oldWords.includes(whatIsBeingSaid)) {
-              localStorage.setItem('chosenWords', `${oldWords}, ${whatIsBeingSaid}`);
-          }
+          setNewPossibleUtterance(0, i, currentPossibleUtterances);
+          rememberWord(whatIsBeingSaid);
           setTimeout(() => (event.target as HTMLInputElement).value = '', 500)
           break;              
       }

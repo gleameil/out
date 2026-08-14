@@ -87,7 +87,7 @@ function determineImageIndex(dialogue: (Statement | Options)[], index: number) {
 }
 
 function printLog(log: string): void {
-  const tagMatch = log.match(/\s*\[([AOB])\]$/);
+  const tagMatch = log.match(/\s*\[([AOBJ])\]$/);
 
   if (!tagMatch) {
     // Existing untagged logs — default console color, no signature
@@ -129,9 +129,10 @@ function snowsee(dialogue: (Statement | Options)[], index: number, nextTime: () 
         removeByClassName('snowsight-option-box');
         snowsee(optionsEntry.options[i].next, 0, nextTime, nextWords)
       });
-      if (optionsEntry.log) {
-        printLog(optionsEntry.log);
-      }
+    }
+    // Outside the loop: one marginal note per choice point, not one per button.
+    if (optionsEntry.log) {
+      printLog(optionsEntry.log);
     }
   } else {
     const statementEntry = entry as Statement;
